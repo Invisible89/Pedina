@@ -24,8 +24,11 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity
 
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks, HomeFragment.OnFragmentInteractionListener, PedinaFragment.OnFragmentInteractionListener,
-        OurStoryFragment.OnFragmentInteractionListener, NewsFragment.OnFragmentInteractionListener {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks,
+                   HomeFragment.OnFragmentInteractionListener,
+                   PedinaFragment.OnFragmentInteractionListener,
+                   OurStoryFragment.OnFragmentInteractionListener,
+                   NewsFragment.OnFragmentInteractionListener {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -73,18 +76,23 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getFragmentManager();
         switch(position) {
             case 0:
+                mTitle = getString(R.string.title_section1);
                 fragment = new HomeFragment();
                 break;
             case 1:
+                mTitle = getString(R.string.title_section2);
                 fragment = new PedinaFragment();
                 break;
             case 2:
+                mTitle = getString(R.string.title_section3);
                 fragment = new OurStoryFragment();
                 break;
             case 3:
+                mTitle = getString(R.string.title_section4);
                 fragment = new NewsFragment();
                 break;
             default:
+                mTitle = getString(R.string.title_section1);
                 fragment = new HomeFragment();
                 break;
         }

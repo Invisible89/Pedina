@@ -17,22 +17,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
+            android:name=".HomeFragment"
             android:label="Home"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".Pedina"
+            android:name=".PedinaFragment"
             android:label="Pedina"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".OurStory"
+            android:name=".OurStoryFragment"
             android:label="Our story"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".News"
+            android:name=".NewsFragment"
             android:label="News"
             android:windowSoftInputMode="stateHidden" >
         </activity>
