@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity
+
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
@@ -47,6 +48,8 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
 
+
+
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
@@ -54,6 +57,22 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+
+
+        // update the main content by replacing fragments
+//        Fragment fragment = new SpotFragement();
+//        FragmentManager fragmentManager = getFragmentManager();
+//        switch(position) {
+//            case 0:
+//                fragment = new SpotFragement();
+//                break;
+//            case 1:
+//                fragment = new SessionsFragement();
+//                break;
+//        }
+//        fragmentManager.beginTransaction()
+//                .replace(R.id.container, fragment)
+//                .commit();
     }
 
     public void onSectionAttached(int number) {
@@ -66,6 +85,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
                 break;
         }
     }

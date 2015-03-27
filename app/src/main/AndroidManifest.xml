@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Home"
+            android:label="Home"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Pedina"
+            android:label="Pedina"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".OurStory"
+            android:label="Our story"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="News"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
     </application>
 
 </manifest>
