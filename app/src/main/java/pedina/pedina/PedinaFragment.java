@@ -1,12 +1,14 @@
 package pedina.pedina;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -65,7 +67,30 @@ public class PedinaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pedina, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_pedina, container, false);
+
+        ImageView circle1 = (ImageView) rootView.findViewById(R.id.circle1);
+        ImageView circle2 = (ImageView) rootView.findViewById(R.id.circle2);
+        ImageView circle3 = (ImageView) rootView.findViewById(R.id.circle3);
+        ImageView circle4 = (ImageView) rootView.findViewById(R.id.circle4);
+        SetCircleListener(circle1);
+        SetCircleListener(circle2);
+        SetCircleListener(circle3);
+        SetCircleListener(circle4);
+
+        return rootView;
+    }
+
+    public void SetCircleListener(View image)
+    {
+        image.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                onCircleClicked(v);
+            }
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -105,6 +130,42 @@ public class PedinaFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
+    }
+
+    public void onCircleClicked(View image)
+    {
+        String text="";
+        String title="";
+        switch (image.getId())
+        {
+            case R.id.circle1:
+                text="To find your objects all over the world. Ok for your child, pet, car or bike. Available only for the GPS device.";
+                title="GPS MODE";
+                break;
+            case R.id.circle2:
+                text="To find your objects in a short range distance; your smartphone will also ring if you go far from your objects!";
+                title="BLUETOOTH 3.0";
+                break;
+            case R.id.circle3:
+                text="Qi for wireless charging.";
+                title="SMART CHARGING";
+                break;
+            case R.id.circle4:
+                text="Lithium-polymer battery.\nManifactured with an innovative 3D printer.";
+                title="INNOVATIVE";
+                break;
+        }
+
+        final Dialog dialog = new Dialog(this.getActivity());
+        dialog.setContentView(R.layout.popup);
+        dialog.setTitle(title);
+        dialog.setCancelable(true);
+
+        TextView textView = (TextView) dialog.findViewById(R.id.text_popup);
+        textView.setText(text);
+
+        dialog.show();
+
     }
 
 }

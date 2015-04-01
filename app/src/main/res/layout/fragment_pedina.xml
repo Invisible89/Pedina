@@ -52,7 +52,7 @@
             android:gravity="center"
             android:clickable="false"
             android:layout_marginBottom="21dp"
-            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignBottom="@+id/circle1"
             android:layout_alignRight="@+id/imageView"
             android:layout_alignEnd="@+id/imageView" />
 
@@ -69,7 +69,7 @@
             android:elegantTextHeight="false"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_below="@+id/imageView4"
+            android:layout_below="@+id/circle2"
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView" />
 
@@ -93,19 +93,19 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/imageView3"
+            android:id="@+id/circle1"
             android:src="@drawable/circle_1"
             android:layout_marginTop="23dp"
             android:layout_alignTop="@+id/imageView"
-            android:layout_toRightOf="@+id/imageView4"
-            android:layout_toEndOf="@+id/imageView4" />
+            android:layout_toRightOf="@+id/circle2"
+            android:layout_toEndOf="@+id/circle2" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/imageView4"
+            android:id="@+id/circle2"
             android:src="@drawable/circle_2"
-            android:layout_above="@+id/imageView5"
+            android:layout_above="@+id/circle3"
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView"
             android:layout_marginLeft="37dp"
@@ -115,7 +115,7 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/imageView5"
+            android:id="@+id/circle3"
             android:src="@drawable/circle_3"
             android:layout_above="@+id/textView5"
             android:layout_alignLeft="@+id/textView3"
@@ -127,10 +127,10 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/imageView6"
+            android:id="@+id/circle4"
             android:src="@drawable/circle_4"
-            android:layout_below="@+id/imageView3"
-            android:layout_toEndOf="@+id/imageView5" />
+            android:layout_below="@+id/circle1"
+            android:layout_toEndOf="@+id/circle3" />
 
 
         <LinearLayout  android:layout_width="match_parent"
