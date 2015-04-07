@@ -73,23 +73,35 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getFragmentManager();
         switch(position) {
             case 0:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.home);
                 fragment = new HomeFragment();
                 break;
             case 1:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.trivo);
                 fragment = new PedinaFragment();
                 break;
             case 2:
-                mTitle = getString(R.string.title_section3);
-                fragment = new OurStoryFragment();
+                mTitle = getString(R.string.chargers);
+                fragment = new ChargersFragment();
                 break;
             case 3:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getString(R.string.car_bike);
+                fragment = new CarBikeFragment();
+                break;
+            case 4:
+                mTitle = getString(R.string.tools);
+                fragment = new ToolsFragment();
+                break;
+            case 5:
+                mTitle = getString(R.string.our_story);
+                fragment = new OurStoryFragment();
+                break;
+            case 6:
+                mTitle = getString(R.string.news);
                 fragment = new NewsFragment();
                 break;
             default:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.home);
                 fragment = new HomeFragment();
                 break;
         }
@@ -101,16 +113,25 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.home);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.trivo);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getString(R.string.chargers);
                 break;
             case 4:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getString(R.string.car_bike);
+                break;
+            case 5:
+                mTitle = getString(R.string.tools);
+                break;
+            case 6:
+                mTitle = getString(R.string.our_story);
+                break;
+            case 7:
+                mTitle = getString(R.string.news);
                 break;
         }
     }
