@@ -16,7 +16,43 @@
 
     <string name="action_settings">Settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- OUR STORY STRINGS-->
+    <string name="ourstory_name_ee">Elisa Epifani</string>
+    <string name="ourstory_subdesc_ee">CFO and marketing</string>
+    <string name="ourstory_desc_ee">Economist mastering international marketing at University of Turin (Italy)</string>
+
+    <string name="ourstory_name_lc">Luca Carabetta</string>
+    <string name="ourstory_subdesc_lc">CEO</string>
+    <string name="ourstory_desc_lc">Energy and ICT engineer, consultant at Italian Parliament for policies on startups, innovation, business and energy</string>
+
+    <string name="ourstory_name_mc">Michele Cocca</string>
+    <string name="ourstory_subdesc_mc">CTO</string>
+    <string name="ourstory_desc_mc">Information Technology engineer, soon graduated at Polytechnic University of Turin, Rugby player.</string>
+
+    <string name="ourstory_name_ms">Mirko Salvia</string>
+    <string name="ourstory_subdesc_ms">CIO</string>
+    <string name="ourstory_desc_ms">Information Technology engineer, years of experience in programming, head of software</string>
+
+    <string name="ourstory_name_ac">Alessandro Capizzi</string>
+    <string name="ourstory_subdesc_ac">CDO</string>
+    <string name="ourstory_desc_ac">Electronic and mechanical engineer, working on mechanical design and electronic components</string>
+
+    <string name="ourstory_name_st">Silvia Tortorella</string>
+    <string name="ourstory_subdesc_st">Designer</string>
+    <string name="ourstory_desc_st">Student at Art Academy of Turin, passion for fashion and art</string>
+
+    <string name="ourstory_name_gb">Gianluca Blua</string>
+    <string name="ourstory_subdesc_gb">Social responsible</string>
+    <string name="ourstory_desc_gb">Motor science student at University of Turin, event organizer and promoter, social addicted</string>
+
+
+
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment_news">Hello blank fragment NEWS</string>
     <string name="hello_blank_fragment_home">Hello blank fragment HOME</string>
     <string name="hello_blank_fragment_ourstory">Hello blank fragment OUR STORY</string>

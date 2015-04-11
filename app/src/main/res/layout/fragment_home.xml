@@ -8,7 +8,8 @@
         android:layout_height="match_parent" tools:context="pedina.pedina.HomeFragment"
         android:columnCount="1"
         android:rowCount="3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="20dp">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -23,7 +24,7 @@
             android:layout_marginBottom="20dp" />
 
         <WebView
-            android:layout_width="250dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/webView"
             android:layout_gravity="center_horizontal"

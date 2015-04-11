@@ -74,8 +74,8 @@ public class HomeFragment extends Fragment {
             WebView web = (WebView) view.findViewById(R.id.webView);
             if (web!=null) {
                 web.getSettings().setJavaScriptEnabled(true);
-                web.loadUrl("https://www.indiegogo.com/project/z-ero-the-world-s-1st-digital-earphone/embedded");
-//                web.loadData("<iframe src=\"https://www.indiegogo.com/project/z-ero-the-world-s-1st-digital-earphone/embedded\" width=\"222px\" height=\"445px\" frameborder=\"0\" scrolling=\"no\"></iframe>","text/html",null);
+                web.loadUrl("https://www.indiegogo.com/projects/flow-hive-honey-on-tap-directly-from-your-beehive#home");
+//                web.loadData("<iframe src=\"https://www.indiegogo.com/project/flow-hive-honey-on-tap-directly-from-your-beehive/embedded\" width=\"222px\" height=\"445px\" frameborder=\"0\" scrolling=\"no\"></iframe>","text/html",null);
             }
         }
 
