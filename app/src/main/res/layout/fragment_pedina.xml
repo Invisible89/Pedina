@@ -15,7 +15,7 @@
             android:layout_height="270dp"
             android:id="@+id/imageView"
             android:layout_gravity="center"
-            android:src="@drawable/pedina_item"
+            android:src="@drawable/trivo_item"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="36dp" />
