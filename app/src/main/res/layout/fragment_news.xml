@@ -1,94 +1,21 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scrollView">
+    android:orientation="vertical" >
 
-    <LinearLayout  android:layout_width="match_parent"
-        android:layout_height="match_parent" tools:context="pedina.pedina.OurStoryFragment"
-        android:orientation="vertical">
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
 
-    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView8"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView9"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView13"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView14"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView15"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView16"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView17"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="News 1"
-            android:drawableStart="@drawable/news"
-            android:drawableLeft="@drawable/news"
-            android:id="@+id/textView18"
-            android:padding="5dp" />
-    </LinearLayout>
-
-    </ScrollView>
+</RelativeLayout>

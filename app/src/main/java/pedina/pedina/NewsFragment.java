@@ -1,12 +1,31 @@
 package pedina.pedina;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Handler;
+import android.os.ResultReceiver;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -17,7 +36,7 @@ import android.view.ViewGroup;
  * Use the {@link NewsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class NewsFragment extends Fragment {
+public class NewsFragment extends Fragment implements AdapterView.OnItemClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -26,6 +45,10 @@ public class NewsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ProgressBar mProgressBar;
+    private ListView mListView;
+    private View mView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -63,8 +86,55 @@ public class NewsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_news, container, false);
+        if (mView == null) {
+            mView = inflater.inflate(R.layout.fragment_news, container, false);
+            mProgressBar = (ProgressBar) mView.findViewById(R.id.progressBar);
+            mListView = (ListView) mView.findViewById(R.id.listView );
+            mListView.setOnItemClickListener(this);
+            startService();
+        } else {
+            // If we are returning from a configuration change:
+            // "view" is still attached to the previous view hierarchy
+            // so we need to remove it and re-attach it to the current one
+            ViewGroup parent = (ViewGroup) mView.getParent();
+            parent.removeView(mView);
+        }
+        return mView;
+    }
+
+    private void startService() {
+        Intent intent = new Intent(getActivity(), RssService.class);
+        intent.putExtra(RssService.RECEIVER, resultReceiver);
+        getActivity().startService(intent);
+    }
+
+    /**
+     * Once the {@link RssService} finishes its task, the result is sent to this ResultReceiver.
+     */
+    private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
+        @SuppressWarnings("unchecked")
+        @Override
+        protected void onReceiveResult(int resultCode, Bundle resultData) {
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable(RssService.ITEMS);
+            if (items != null) {
+                RssAdapter adapter = new RssAdapter(getActivity(), items);
+                mListView.setAdapter(adapter);
+            } else {
+                Toast.makeText(getActivity(), "An error occured while downloading the rss feed.",
+                        Toast.LENGTH_LONG).show();
+            }
+            mProgressBar.setVisibility(View.GONE);
+            mListView.setVisibility(View.VISIBLE);
+        };
+    };
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        RssAdapter adapter = (RssAdapter) parent.getAdapter();
+        RssItem item = (RssItem) adapter.getItem(position);
+        Uri uri = Uri.parse(item.getLink());
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -104,6 +174,14 @@ public class NewsFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
+    }
+
+    public InputStream getInputStream(URL url) {
+        try {
+            return url.openConnection().getInputStream();
+        } catch (IOException e) {
+            return null;
+        }
     }
 
 }
