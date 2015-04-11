@@ -1,10 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <!-- Aggiunta tasto per azione -->
-    <item android:id="@+id/action_example" android:title="@string/action_example"
-        app:showAsAction="withText|ifRoom" />
-    <!-- Aggiunta tre puntini laterali per elenco voci e azioni -->
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+    <!--&lt;!&ndash; Aggiunta tasto per azione &ndash;&gt;-->
+    <!--<item android:id="@+id/action_example" android:title="@string/action_example"-->
+        <!--app:showAsAction="withText|ifRoom" />-->
+    <!--&lt;!&ndash; Aggiunta tre puntini laterali per elenco voci e azioni &ndash;&gt;-->
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
 </menu>

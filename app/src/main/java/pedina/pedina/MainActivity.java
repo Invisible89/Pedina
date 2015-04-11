@@ -25,7 +25,11 @@ public class MainActivity extends ActionBarActivity
                    HomeFragment.OnFragmentInteractionListener,
                    PedinaFragment.OnFragmentInteractionListener,
                    OurStoryFragment.OnFragmentInteractionListener,
-                   NewsFragment.OnFragmentInteractionListener {
+                   NewsFragment.OnFragmentInteractionListener,
+                    ChargersFragment.OnFragmentInteractionListener,
+                    ToolsFragment.OnFragmentInteractionListener,
+                    CarBikeFragment.OnFragmentInteractionListener
+                    {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -166,10 +170,10 @@ public class MainActivity extends ActionBarActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
