@@ -2,17 +2,26 @@ package pedina.pedina;
 
 public class RssItem {
 
-    private final String title;
-    private final String link;
+    private final String m_title;
+    private final String m_link;
+    private final String m_desc;
+    private final String m_image;
 
-    public RssItem(String title, String link){
+    public RssItem(String title, String link, String desc, String image){
 
-        this.title = title;
-        this.link = link;
+        m_title = title;
+        m_link = link;
+        m_desc = desc;
+        m_image = image;
     }
 
-    public String getTitle() { return title;}
+    public String getTitle() { return m_title;}
 
-    public String getLink() { return link;}
+    public String getLink() { return m_link;}
+
+    public String getDescription() { return m_desc;}
+
+    public String getImageUrl() { return m_image;}
+
 
 }
