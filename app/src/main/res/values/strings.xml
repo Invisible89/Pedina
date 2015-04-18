@@ -19,6 +19,38 @@
 
     <string name="action_settings">Settings</string>
 
+    <!-- TRIVO STRINGS-->
+    <string name="trivo_gps_title">GPS VERSION</string>
+    <string name="trivo_gps_desc">You can locate anything all over the world. Bluetooth included to find objects near you and in enclosed spaces.</string>
+
+    <string name="trivo_bt_title">BLUETOOTH VERSION</string>
+    <string name="trivo_bt_desc">Smaller and thinner than the GPS version, it works perfectly in enclosed spaces and it warns you if you leave your objects behind.</string>
+
+    <string name="trivo_wc_title">WIRELESS CHARGING</string>
+    <string name="trivo_wc_desc">The primary charging method for our devices is Qi Wireless, a USB port is also included.</string>
+
+    <string name="trivo_3p_title">3D PRINTED</string>
+    <string name="trivo_3p_desc">We use 3D printers to manufacture by ourselves all our products and to give you the best available materials.</string>
+
+    <string name="trivo_as_title">ANONYMOUS, SECURE</string>
+    <string name="trivo_as_desc">Our trackers can be used only by its owner and we guarantee a completely anonymous and secure service.</string>
+
+    <!-- BUSINESS CARD STRINGS-->
+    <string name="businesscard_gps_title">GPS VERSION</string>
+    <string name="businesscard_gps_desc">You can locate anything all over the world. Bluetooth included to find objects near you and in enclosed spaces.</string>
+
+    <string name="businesscard_bt_title">BLUETOOTH VERSION</string>
+    <string name="businesscard_bt_desc">Smaller and thinner than the GPS version, it works perfectly in enclosed spaces and it warns you if you leave your objects behind.</string>
+
+    <string name="businesscard_wc_title">WIRELESS CHARGING</string>
+    <string name="businesscard_wc_desc">The primary charging method for our devices is Qi Wireless, a USB port is also included.</string>
+
+    <string name="businesscard_3p_title">3D PRINTED</string>
+    <string name="businesscard_3p_desc">We use 3D printers to manufacture by ourselves all our products and to give you the best available materials.</string>
+
+    <string name="businesscard_as_title">ANONYMOUS, SECURE</string>
+    <string name="businesscard_as_desc">Our trackers can be used only by its owner and we guarantee a completely anonymous and secure service.</string>
+
     <!-- OUR STORY STRINGS-->
     <string name="ourstory_storytitle">BEING A STARTUP MEANS TO CREATE SOMETHING FROM NOTHING</string>
     <string name="ourstory_storydesc">Our team was born at the beginning of 2015 in order to create something from nothing, this was and is our goal. We have worked hard for months to develop an idea, studying how to give the best product to thousands of costumers all over the world. Here we are with Trivo, the most little and cheapest GPS tracking device all over the world, we are going to change your life forever: no more lost wallets or keys and the things you care the most always with you.\nWe are here to ask you for your help to start our dream, with a little contribution you will have our first products and you will be able to really support our startup.</string>

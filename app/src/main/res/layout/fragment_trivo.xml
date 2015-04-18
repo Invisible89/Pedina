@@ -4,157 +4,208 @@
     android:layout_height="match_parent"
     android:id="@+id/scrollView">
 
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="match_parent" tools:context="pedina.pedina.TrivoFragment"
-        android:longClickable="false">
 
-        <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="310dp"
-            android:layout_height="270dp"
-            android:id="@+id/imageView"
-            android:layout_gravity="center"
-            android:src="@drawable/trivo_item"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="36dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
 
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:text="GPS tracking core"
-            android:id="@+id/textView2"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:textColor="#ffffffff"
-            android:alpha="0.7"
-            android:autoText="false"
-            android:elegantTextHeight="false"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_alignTop="@+id/textView3"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView19"
+                android:src="@drawable/trivo_title"
+                android:padding="5dp" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:text="Lithium-polymer battery"
-            android:id="@+id/textView3"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:textColor="#ffffffff"
-            android:alpha="0.7"
-            android:autoText="false"
-            android:elegantTextHeight="false"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:clickable="false"
-            android:layout_marginBottom="21dp"
-            android:layout_alignBottom="@+id/circle1"
-            android:layout_alignRight="@+id/imageView"
-            android:layout_alignEnd="@+id/imageView" />
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Bluetooth for low-range tracking"
-            android:id="@+id/textView4"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:textColor="#ffffffff"
-            android:alpha="0.7"
-            android:autoText="false"
-            android:elegantTextHeight="false"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_below="@+id/circle2"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView" />
-
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:text="Qi for wireless charghing"
-            android:id="@+id/textView5"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:textColor="#ffffffff"
-            android:alpha="0.7"
-            android:autoText="false"
-            android:elegantTextHeight="false"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_alignRight="@+id/imageView"
-            android:layout_alignEnd="@+id/imageView" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/circle1"
-            android:src="@drawable/circle_1"
-            android:layout_marginTop="23dp"
-            android:layout_alignTop="@+id/imageView"
-            android:layout_toRightOf="@+id/circle2"
-            android:layout_toEndOf="@+id/circle2" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/circle2"
-            android:src="@drawable/circle_2"
-            android:layout_above="@+id/circle3"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_marginLeft="37dp"
-            android:layout_marginStart="37dp"
-            android:layout_marginBottom="22dp" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/circle3"
-            android:src="@drawable/circle_3"
-            android:layout_above="@+id/textView5"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_marginLeft="53dp"
-            android:layout_marginStart="53dp"
-            android:layout_marginBottom="19dp" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/circle4"
-            android:src="@drawable/circle_4"
-            android:layout_below="@+id/circle1"
-            android:layout_toEndOf="@+id/circle3" />
-
-
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="match_parent" tools:context="pedina.pedina.OurStoryFragment"
+        <LinearLayout
             android:orientation="vertical"
-            android:layout_alignParentEnd="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentTop="false"
-            android:baselineAligned="false"
-            android:layout_alignParentStart="false"
-            android:layout_below="@+id/imageView"
-            android:layout_marginTop="20dp">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView2" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        tools:context="pedina.pedina.TrivoFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:longClickable="false"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="310dp"
+                            android:layout_height="270dp"
+                            android:id="@+id/imageView"
+                            android:layout_gravity="center"
+                            android:src="@drawable/trivo_item"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="34dp"
+                            android:layout_marginStart="34dp"
+                            android:padding="15dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/circle1"
+                            android:src="@drawable/circle_1"
+                            android:layout_marginTop="45dp"
+                            android:layout_alignTop="@+id/imageView"
+                            android:layout_toRightOf="@+id/circle2"
+                            android:layout_toEndOf="@+id/circle2" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/circle2"
+                            android:src="@drawable/circle_2"
+                            android:layout_above="@+id/circle3"
+                            android:layout_alignLeft="@+id/imageView"
+                            android:layout_alignStart="@+id/imageView"
+                            android:layout_marginLeft="37dp"
+                            android:layout_marginStart="37dp"
+                            android:layout_marginBottom="22dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/circle3"
+                            android:src="@drawable/circle_3"
+                            android:layout_above="@+id/textView5"
+                            android:layout_alignLeft="@+id/textView3"
+                            android:layout_alignStart="@+id/textView3"
+                            android:layout_marginLeft="53dp"
+                            android:layout_marginStart="53dp"
+                            android:layout_marginBottom="19dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/circle4"
+                            android:src="@drawable/circle_4"
+                            android:layout_below="@+id/circle1"
+                            android:layout_toEndOf="@+id/circle3" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="GPS tracking core"
+                            android:id="@+id/textView2"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="#ffffffff"
+                            android:alpha="0.7"
+                            android:autoText="false"
+                            android:elegantTextHeight="false"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_alignTop="@+id/textView3"
+                            android:layout_alignLeft="@+id/imageView"
+                            android:layout_alignStart="@+id/imageView" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lithium-polymer battery"
+                            android:id="@+id/textView3"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="#ffffffff"
+                            android:alpha="0.7"
+                            android:autoText="false"
+                            android:elegantTextHeight="false"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:clickable="false"
+                            android:layout_marginBottom="21dp"
+                            android:layout_alignBottom="@+id/circle1"
+                            android:layout_alignRight="@+id/imageView"
+                            android:layout_alignEnd="@+id/imageView" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Bluetooth for low-range tracking"
+                            android:id="@+id/textView4"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="#ffffffff"
+                            android:alpha="0.7"
+                            android:autoText="false"
+                            android:elegantTextHeight="false"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_below="@+id/circle2"
+                            android:layout_alignLeft="@+id/imageView"
+                            android:layout_alignStart="@+id/imageView" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Qi for wireless charghing"
+                            android:id="@+id/textView5"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="#ffffffff"
+                            android:alpha="0.7"
+                            android:autoText="false"
+                            android:elegantTextHeight="false"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_alignBottom="@+id/imageView"
+                            android:layout_alignRight="@+id/imageView"
+                            android:layout_alignEnd="@+id/imageView" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView13"
+                            android:src="@drawable/tracker_front"
+                            android:padding="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView20"
+                            android:src="@drawable/trackers_row" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="5dp" >
+                android:layout_height="fill_parent" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView10"
-                    android:src="@drawable/zoom" />
+                    android:src="@drawable/icon_gps"
+                    android:padding="5dp" />
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -166,29 +217,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/ourstory_name_ee"
+                        android:text="@string/trivo_gps_title"
                         android:id="@+id/textView8" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/ourstory_desc_ee"
+                        android:text="@string/trivo_gps_desc"
                         android:id="@+id/textView13" />
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="5dp" >
+                android:layout_height="fill_parent" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView11"
-                    android:src="@drawable/tools" />
+                    android:src="@drawable/icon_bluetooth"
+                    android:padding="5dp" />
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -200,14 +252,92 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/ourstory_name_ee"
+                        android:text="@string/trivo_bt_title"
+                        android:id="@+id/textView20" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/trivo_bt_desc"
+                        android:id="@+id/textView21" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/icon_battery"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/trivo_wc_title"
+                        android:id="@+id/textView30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/trivo_wc_desc"
+                        android:id="@+id/textView31" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView22"
+                    android:src="@drawable/icon_build"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/trivo_3p_title"
                         android:id="@+id/textView14" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/ourstory_desc_ee"
+                        android:text="@string/trivo_3p_desc"
                         android:id="@+id/textView16" />
                 </LinearLayout>
             </LinearLayout>
@@ -215,14 +345,14 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="5dp" >
+                android:layout_height="fill_parent" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView12"
-                    android:src="@drawable/looked" />
+                    android:id="@+id/imageView23"
+                    android:src="@drawable/icon_secure"
+                    android:padding="5dp" />
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -230,59 +360,28 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp" >
 
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/ourstory_name_ee"
+                        android:text="@string/trivo_as_title"
                         android:id="@+id/textView17" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/ourstory_desc_ee"
+                        android:text="@string/trivo_as_desc"
                         android:id="@+id/textView34" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="5dp" >
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView13"
-                    android:src="@drawable/zoom" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/ourstory_name_ee"
-                        android:id="@+id/textView35" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/ourstory_desc_ee"
-                        android:id="@+id/textView37" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
 
-    </RelativeLayout>
-
-
+    </LinearLayout>
 </ScrollView>

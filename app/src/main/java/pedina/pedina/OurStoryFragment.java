@@ -167,7 +167,6 @@ public class OurStoryFragment extends Fragment {
     public void SetLIListener(View image)
     {
 
-
         String url = "";
 
         switch (image.getId())
