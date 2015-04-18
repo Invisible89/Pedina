@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context="pedina.pedina.TrivoFragment"
+        android:longClickable="false">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_explosion"
+            android:layout_gravity="center"
+            android:src="@drawable/esplosione"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

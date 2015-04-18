@@ -73,10 +73,10 @@ public class TrivoFragment extends Fragment {
         ImageView circle2 = (ImageView) rootView.findViewById(R.id.circle2);
         ImageView circle3 = (ImageView) rootView.findViewById(R.id.circle3);
         ImageView circle4 = (ImageView) rootView.findViewById(R.id.circle4);
-        SetCircleListener(circle1);
-        SetCircleListener(circle2);
-        SetCircleListener(circle3);
-        SetCircleListener(circle4);
+        if (circle1!=null) SetCircleListener(circle1);
+        if (circle2!=null) SetCircleListener(circle2);
+        if (circle3!=null) SetCircleListener(circle3);
+        if (circle4!=null) SetCircleListener(circle4);
 
         return rootView;
     }
