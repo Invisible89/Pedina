@@ -61,7 +61,10 @@ public class RssAdapter extends BaseAdapter {
         holder.text_title_rss.setText(items.get(position).getTitle());
         holder.text_desc_rss.setText(items.get(position).getDescription());
 
-        new ImageLoadTask("http://www.trivotracker.com/wp-content/uploads/2015/04/logo-completo-colorato-01-300x159.jpg", holder.image_rss).execute();
+        //new ImageLoadTask("http://www.trivotracker.com/wp-content/uploads/2015/04/logo-completo-colorato-01-300x159.jpg", holder.image_rss).execute();
+        String imgUrl = items.get(position).getImageUrl();
+        if (imgUrl !=null && !imgUrl.isEmpty())
+            new ImageLoadTask(imgUrl, holder.image_rss).execute();
 
         return convertView;
     }

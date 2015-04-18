@@ -2,6 +2,7 @@ package pedina.pedina;
 
 import android.util.Xml;
 
+import org.xml.sax.SAXException;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.jar.Attributes;
 
 /**
  * Created by Francesco on 11/04/2015.
@@ -34,25 +36,41 @@ public class RssParser {
         String title = null;
         String link = null;
         String description = null;
+        String image = null;
+        RssItem item = null;
         List<RssItem> items = new ArrayList<RssItem>();
         while (parser.next() != XmlPullParser.END_DOCUMENT) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
             String name = parser.getName();
-            if (name.equals("title")) {
-                title = readTitle(parser);
-            } else if (name.equals("link")) {
-                link = readLink(parser);
-            } else if (name.equals("description"))
-                description = readDescription(parser);
-
-            if (title != null && link != null) {
-                RssItem item = new RssItem(title, link, description, "");
-                items.add(item);
-                title = null;
-                link = null;
-                description = null;
+            switch (name)
+            {
+                case "title":
+                {
+                    if (item!=null) items.add(item);
+                    title = readTitle(parser);
+                    item = new RssItem(title);
+                    break;
+                }
+                case "link":
+                {
+                    link = readLink(parser);
+                    if (item!=null) item.setLink(link);
+                    break;
+                }
+                case "description":
+                {
+                    description = readDescription(parser);
+                    if (item!=null) item.setDescription(description);
+                    break;
+                }
+                case "enclosure":
+                {
+                    image = readImage(parser);
+                    if (item!=null) item.setImageUrl(image);
+                    break;
+                }
             }
         }
         return items;
@@ -77,6 +95,14 @@ public class RssParser {
         String title = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "description");
         return title;
+    }
+
+    private String readImage(XmlPullParser parser) throws XmlPullParserException, IOException {
+        parser.require(XmlPullParser.START_TAG, ns, "enclosure");
+        String image = parser.getAttributeValue(ns, "url");
+        String img = readText(parser);
+        parser.require(XmlPullParser.END_TAG, ns, "enclosure");
+        return image;
     }
 
     // For the tags title and link, extract their text values.

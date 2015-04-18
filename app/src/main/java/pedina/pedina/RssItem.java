@@ -3,16 +3,16 @@ package pedina.pedina;
 public class RssItem {
 
     private final String m_title;
-    private final String m_link;
-    private final String m_desc;
-    private final String m_image;
+    private String m_link;
+    private String m_desc;
+    private String m_image;
 
-    public RssItem(String title, String link, String desc, String image){
+    public RssItem(String title){
 
         m_title = title;
-        m_link = link;
-        m_desc = desc;
-        m_image = image;
+        m_link = null;
+        m_desc = null;
+        m_image = null;
     }
 
     public String getTitle() { return m_title;}
@@ -22,6 +22,11 @@ public class RssItem {
     public String getDescription() { return m_desc;}
 
     public String getImageUrl() { return m_image;}
+
+    public void setLink(String link) { m_link = link; }
+    public void setDescription(String desc) { m_desc = desc; }
+    public void setImageUrl(String image) { m_image = image; }
+
 
 
 }
