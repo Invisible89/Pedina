@@ -15,20 +15,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity
 
         implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-                   HomeFragment.OnFragmentInteractionListener,
-                   PedinaFragment.OnFragmentInteractionListener,
-                   OurStoryFragment.OnFragmentInteractionListener,
-                   NewsFragment.OnFragmentInteractionListener,
-                    ChargersFragment.OnFragmentInteractionListener,
-                    ToolsFragment.OnFragmentInteractionListener,
-                    CarBikeFragment.OnFragmentInteractionListener
+        HomeFragment.OnFragmentInteractionListener,
+        TrivoFragment.OnFragmentInteractionListener,
+        BusinessCardFragment.OnFragmentInteractionListener,
+        ForCarsFragment.OnFragmentInteractionListener,
+        ForBikesFragment.OnFragmentInteractionListener,
+        ForChildrensFragment.OnFragmentInteractionListener,
+        ForPetsFragment.OnFragmentInteractionListener,
+        WirelessChargerFragment.OnFragmentInteractionListener,
+        OurStoryFragment.OnFragmentInteractionListener,
+        NewsFragment.OnFragmentInteractionListener
                     {
 
     /**
@@ -82,25 +83,37 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 mTitle = getString(R.string.trivo);
-                fragment = new PedinaFragment();
+                fragment = new TrivoFragment();
                 break;
             case 2:
-                mTitle = getString(R.string.chargers);
-                fragment = new ChargersFragment();
+                mTitle = getString(R.string.business_card);
+                fragment = new BusinessCardFragment();
                 break;
             case 3:
-                mTitle = getString(R.string.car_bike);
-                fragment = new CarBikeFragment();
+                mTitle = getString(R.string.for_cars);
+                fragment = new ForCarsFragment();
                 break;
             case 4:
-                mTitle = getString(R.string.tools);
-                fragment = new ToolsFragment();
+                mTitle = getString(R.string.for_bikes);
+                fragment = new ForBikesFragment();
                 break;
             case 5:
+                mTitle = getString(R.string.for_childrens);
+                fragment = new ForChildrensFragment();
+                break;
+            case 6:
+                mTitle = getString(R.string.for_pets);
+                fragment = new ForPetsFragment();
+                break;
+            case 7:
+                mTitle = getString(R.string.wireless_charger);
+                fragment = new WirelessChargerFragment();
+                break;
+            case 8:
                 mTitle = getString(R.string.our_story);
                 fragment = new OurStoryFragment();
                 break;
-            case 6:
+            case 9:
                 mTitle = getString(R.string.news);
                 fragment = new NewsFragment();
                 break;
@@ -123,18 +136,27 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.trivo);
                 break;
             case 3:
-                mTitle = getString(R.string.chargers);
+                mTitle = getString(R.string.business_card);
                 break;
             case 4:
-                mTitle = getString(R.string.car_bike);
+                mTitle = getString(R.string.for_cars);
                 break;
             case 5:
-                mTitle = getString(R.string.tools);
+                mTitle = getString(R.string.for_bikes);
                 break;
             case 6:
-                mTitle = getString(R.string.our_story);
+                mTitle = getString(R.string.for_childrens);
                 break;
             case 7:
+                mTitle = getString(R.string.for_pets);
+                break;
+            case 8:
+                mTitle = getString(R.string.wireless_charger);
+                break;
+            case 9:
+                mTitle = getString(R.string.our_story);
+                break;
+            case 10:
                 mTitle = getString(R.string.news);
                 break;
         }

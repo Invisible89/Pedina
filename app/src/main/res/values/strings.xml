@@ -3,9 +3,12 @@
 
     <string name="home">Home</string>
     <string name="trivo">Trivo</string>
-    <string name="car_bike">Car and Bike</string>
-    <string name="chargers">Chargers</string>
-    <string name="tools">Tools</string>
+    <string name="business_card">Business card</string>
+    <string name="for_cars">For cars</string>
+    <string name="for_bikes">For bikes</string>
+    <string name="wireless_charger">Wireless charger</string>
+    <string name="for_pets">For pets</string>
+    <string name="for_childrens">For childrens</string>
     <string name="our_story">Our story</string>
     <string name="news">News</string>
 
@@ -17,6 +20,9 @@
     <string name="action_settings">Settings</string>
 
     <!-- OUR STORY STRINGS-->
+    <string name="ourstory_storytitle">BEING A STARTUP MEANS TO CREATE SOMETHING FROM NOTHING</string>
+    <string name="ourstory_storydesc">Our team was born at the beginning of 2015 in order to create something from nothing, this was and is our goal. We have worked hard for months to develop an idea, studying how to give the best product to thousands of costumers all over the world. Here we are with Trivo, the most little and cheapest GPS tracking device all over the world, we are going to change your life forever: no more lost wallets or keys and the things you care the most always with you.\nWe are here to ask you for your help to start our dream, with a little contribution you will have our first products and you will be able to really support our startup.</string>
+
     <string name="ourstory_name_ee">Elisa Epifani</string>
     <string name="ourstory_subdesc_ee">CFO and marketing</string>
     <string name="ourstory_desc_ee">Economist mastering international marketing at University of Turin (Italy)</string>

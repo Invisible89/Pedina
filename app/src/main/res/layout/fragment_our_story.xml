@@ -12,13 +12,106 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView14"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView15"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ourstory_name_ee"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/ourstory_subdesc_ee"
+                    android:id="@+id/textView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ourstory_desc_ee"
+                    android:id="@+id/textView9" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:padding="5dp">
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView3"
-                android:src="@drawable/face" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_ee"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_ee"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -64,11 +157,17 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/imageView4"
-                android:layout_toStartOf="@+id/imageView4"
-                android:padding="5dp">
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:id="@+id/linearLayout"
+                android:layout_toLeftOf="@+id/linearLayout2"
+                android:layout_toStartOf="@+id/linearLayout2">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,13 +191,41 @@
                     android:id="@+id/textView24" />
             </LinearLayout>
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView4"
-                android:src="@drawable/face"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentEnd="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView16"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_lc"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_lc"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
 
         <LinearLayout
@@ -113,11 +240,37 @@
             android:layout_height="fill_parent"
             android:padding="5dp" >
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView5"
-                android:src="@drawable/face" />
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_mc"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_mc"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -146,6 +299,7 @@
                     android:text="@string/ourstory_desc_mc"
                     android:id="@+id/textView10" />
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -163,9 +317,9 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/imageView6"
-                android:layout_toStartOf="@+id/imageView6"
-                android:padding="5dp">
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/linearLayout3"
+                android:layout_toStartOf="@+id/linearLayout3">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,13 +343,41 @@
                     android:id="@+id/textView12" />
             </LinearLayout>
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView6"
-                android:src="@drawable/face"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentEnd="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout3" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_ms"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_ms"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
 
         <LinearLayout
@@ -210,11 +392,37 @@
             android:layout_height="fill_parent"
             android:padding="5dp" >
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView7"
-                android:src="@drawable/face" />
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_ac"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_ac"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -243,6 +451,7 @@
                     android:text="@string/ourstory_desc_ac"
                     android:id="@+id/textView26" />
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -260,9 +469,9 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/imageView8"
-                android:layout_toStartOf="@+id/imageView8"
-                android:padding="5dp">
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/linearLayout4"
+                android:layout_toStartOf="@+id/linearLayout4">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -286,13 +495,41 @@
                     android:id="@+id/textView50" />
             </LinearLayout>
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView8"
-                android:src="@drawable/face"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentEnd="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout4" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_st"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_st"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
 
         <LinearLayout
@@ -307,11 +544,37 @@
             android:layout_height="fill_parent"
             android:padding="5dp" >
 
-            <ImageView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView9"
-                android:src="@drawable/face" />
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/face" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_li_gb"
+                        android:src="@drawable/linkedin_logo"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_tw_gb"
+                        android:src="@drawable/twitter_logo"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -340,6 +603,7 @@
                     android:text="@string/ourstory_desc_gb"
                     android:id="@+id/textView53" />
             </LinearLayout>
+
         </LinearLayout>
 
 
