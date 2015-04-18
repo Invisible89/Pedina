@@ -33,6 +33,7 @@ public class RssParser {
         parser.require(XmlPullParser.START_TAG, null, "rss");
         String title = null;
         String link = null;
+        String description = null;
         List<RssItem> items = new ArrayList<RssItem>();
         while (parser.next() != XmlPullParser.END_DOCUMENT) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -43,12 +44,15 @@ public class RssParser {
                 title = readTitle(parser);
             } else if (name.equals("link")) {
                 link = readLink(parser);
-            }
+            } else if (name.equals("description"))
+                description = readDescription(parser);
+
             if (title != null && link != null) {
-                RssItem item = new RssItem(title, link);
+                RssItem item = new RssItem(title, link, description, "");
                 items.add(item);
                 title = null;
                 link = null;
+                description = null;
             }
         }
         return items;
@@ -65,6 +69,13 @@ public class RssParser {
         parser.require(XmlPullParser.START_TAG, ns, "title");
         String title = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "title");
+        return title;
+    }
+
+    private String readDescription(XmlPullParser parser) throws XmlPullParserException, IOException {
+        parser.require(XmlPullParser.START_TAG, ns, "description");
+        String title = readText(parser);
+        parser.require(XmlPullParser.END_TAG, ns, "description");
         return title;
     }
 
