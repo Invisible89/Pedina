@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ForChildrensFragment.OnFragmentInteractionListener} interface
+ * {@link ForVeicle.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ForChildrensFragment#newInstance} factory method to
+ * Use the {@link ForVeicle#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ForChildrensFragment extends Fragment {
+public class ForVeicle extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -35,11 +35,11 @@ public class ForChildrensFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ToolsFragment.
+     * @return A new instance of fragment CarBikeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ForChildrensFragment newInstance(String param1, String param2) {
-        ForChildrensFragment fragment = new ForChildrensFragment();
+    public static ForVeicle newInstance(String param1, String param2) {
+        ForVeicle fragment = new ForVeicle();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -47,7 +47,7 @@ public class ForChildrensFragment extends Fragment {
         return fragment;
     }
 
-    public ForChildrensFragment() {
+    public ForVeicle() {
         // Required empty public constructor
     }
 
@@ -64,7 +64,7 @@ public class ForChildrensFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_for_childrens, container, false);
+        return inflater.inflate(R.layout.fragment_for_veicle, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

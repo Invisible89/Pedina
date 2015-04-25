@@ -23,10 +23,8 @@ public class MainActivity extends ActionBarActivity
         HomeFragment.OnFragmentInteractionListener,
         TrivoFragment.OnFragmentInteractionListener,
         BusinessCardFragment.OnFragmentInteractionListener,
-        ForCarsFragment.OnFragmentInteractionListener,
-        ForBikesFragment.OnFragmentInteractionListener,
-        ForChildrensFragment.OnFragmentInteractionListener,
-        ForPetsFragment.OnFragmentInteractionListener,
+        ForVeicle.OnFragmentInteractionListener,
+        ForChildrenAndPetFragment.OnFragmentInteractionListener,
         WirelessChargerFragment.OnFragmentInteractionListener,
         OurStoryFragment.OnFragmentInteractionListener,
         NewsFragment.OnFragmentInteractionListener
@@ -90,30 +88,22 @@ public class MainActivity extends ActionBarActivity
                 fragment = new BusinessCardFragment();
                 break;
             case 3:
-                mTitle = getString(R.string.for_cars);
-                fragment = new ForCarsFragment();
-                break;
-            case 4:
-                mTitle = getString(R.string.for_bikes);
-                fragment = new ForBikesFragment();
-                break;
-            case 5:
-                mTitle = getString(R.string.for_childrens);
-                fragment = new ForChildrensFragment();
-                break;
-            case 6:
-                mTitle = getString(R.string.for_pets);
-                fragment = new ForPetsFragment();
-                break;
-            case 7:
                 mTitle = getString(R.string.wireless_charger);
                 fragment = new WirelessChargerFragment();
                 break;
-            case 8:
+            case 4:
+                mTitle = getString(R.string.for_children_and_pets);
+                fragment = new ForChildrenAndPetFragment();
+                break;
+            case 5:
+                mTitle = getString(R.string.for_veicle);
+                fragment = new ForVeicle();
+                break;
+            case 6:
                 mTitle = getString(R.string.our_story);
                 fragment = new OurStoryFragment();
                 break;
-            case 9:
+            case 7:
                 mTitle = getString(R.string.news);
                 fragment = new NewsFragment();
                 break;
@@ -139,24 +129,18 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.business_card);
                 break;
             case 4:
-                mTitle = getString(R.string.for_cars);
-                break;
-            case 5:
-                mTitle = getString(R.string.for_bikes);
-                break;
-            case 6:
-                mTitle = getString(R.string.for_childrens);
-                break;
-            case 7:
-                mTitle = getString(R.string.for_pets);
-                break;
-            case 8:
                 mTitle = getString(R.string.wireless_charger);
                 break;
-            case 9:
+            case 5:
+                mTitle = getString(R.string.for_children_and_pets);
+                break;
+            case 6:
+                mTitle = getString(R.string.for_veicle);
+                break;
+            case 7:
                 mTitle = getString(R.string.our_story);
                 break;
-            case 10:
+            case 8:
                 mTitle = getString(R.string.news);
                 break;
         }

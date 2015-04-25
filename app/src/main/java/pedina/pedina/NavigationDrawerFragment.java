@@ -105,11 +105,9 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.home),
                         getString(R.string.trivo),
                         getString(R.string.business_card),
-                        getString(R.string.for_cars),
-                        getString(R.string.for_bikes),
-                        getString(R.string.for_childrens),
-                        getString(R.string.for_pets),
                         getString(R.string.wireless_charger),
+                        getString(R.string.for_children_and_pets),
+                        getString(R.string.for_veicle),
                         getString(R.string.our_story),
                         getString(R.string.news),
                 }));
