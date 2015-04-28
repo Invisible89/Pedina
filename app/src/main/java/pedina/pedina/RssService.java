@@ -19,7 +19,8 @@ public class RssService extends IntentService {
 
     //    private static final String RSS_LINK = "http://www.pcworld.com/index.rss";
     //private static final String RSS_LINK = "http://feeds.tuttomercatoweb.com/rss/";
-    private static final String RSS_LINK = "http://www.gazzetta.it/rss/calcio.xml";
+    //private static final String RSS_LINK = "http://www.gazzetta.it/rss/calcio.xml";
+    private static final String RSS_LINK = "http://www.trivotracker.com/feed/";
     public static final String ITEMS = "items";
     public static final String RECEIVER = "receiver";
 
