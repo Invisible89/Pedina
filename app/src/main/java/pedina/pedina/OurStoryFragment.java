@@ -105,6 +105,21 @@ public class OurStoryFragment extends Fragment {
         SetTWListener(tw_st);
         SetTWListener(tw_gb);
 
+        ImageView cv_ee = (ImageView) rootView.findViewById(R.id.imageView_cv_ee);
+        ImageView cv_lc = (ImageView) rootView.findViewById(R.id.imageView_cv_lc);
+        ImageView cv_mc = (ImageView) rootView.findViewById(R.id.imageView_cv_mc);
+        ImageView cv_ms = (ImageView) rootView.findViewById(R.id.imageView_cv_ms);
+        ImageView cv_ac = (ImageView) rootView.findViewById(R.id.imageView_cv_ac);
+        ImageView cv_st = (ImageView) rootView.findViewById(R.id.imageView_cv_st);
+        ImageView cv_gb = (ImageView) rootView.findViewById(R.id.imageView_cv_gb);
+        SetCVListener(cv_ee);
+        SetCVListener(cv_lc);
+        SetCVListener(cv_mc);
+        SetCVListener(cv_ms);
+        SetCVListener(cv_ac);
+        SetCVListener(cv_st);
+        SetCVListener(cv_gb);
+
         return rootView;
 
     }
@@ -168,48 +183,69 @@ public class OurStoryFragment extends Fragment {
     {
 
         String url = "";
+        String id = "";
 
         switch (image.getId())
         {
             case R.id.imageView_li_ee:
                 url="https://www.linkedin.com/pub/elisa-epifani/48/830/881";
+                id="";
                 break;
             case R.id.imageView_li_lc:
                 url="https://www.linkedin.com/profile/view?id=44658108";
+                id="44658108";
                 break;
             case R.id.imageView_li_mc:
-                url="";
+                url="https://www.linkedin.com/profile/view?id=415473740";
+                id="415473740";
                 break;
             case R.id.imageView_li_ms:
                 url="https://www.linkedin.com/profile/view?id=179929358";
+                id="179929358";
                 break;
             case R.id.imageView_li_ac:
                 url="https://www.linkedin.com/profile/view?id=415338175";
+                id="415338175";
                 break;
             case R.id.imageView_li_st:
                 url="https://www.linkedin.com/profile/view?id=415328774";
+                id="415328774";
                 break;
             case R.id.imageView_li_gb:
                 url="https://www.linkedin.com/profile/view?id=415449059";
+                id="415449059";
                 break;
         }
 
         final String finalUrl = url;
+        final String finalId = id;
         image.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent linkedinIntent = getOpenLinkedinIntent(getActivity(), finalUrl);
+                Intent linkedinIntent = getOpenLinkedinIntent(getActivity(), finalUrl, finalId);
                 startActivity(linkedinIntent);
             }
         });
     }
 
-    public static Intent getOpenLinkedinIntent(Context context, String url) {
+    public static Intent getOpenLinkedinIntent(Context context, String url, String id) {
+
+
+//        try {
+//            context.getPackageManager()
+//                    .getPackageInfo("com.linkedin.android", 0); //Checks if LI is even installed.
+//            return new Intent(Intent.ACTION_VIEW,
+//                    Uri.parse("linkedin://user?screen_name=" + id)); //Trys to make intent with LI's URI
+//        } catch (Exception e) {
+//            return new Intent(Intent.ACTION_VIEW,
+//                    Uri.parse(url)); //catches and opens a url to the desired page
+//        }
 
             return new Intent(Intent.ACTION_VIEW,
                     Uri.parse(url)); //catches and opens a url to the desired page
+
     }
 
 //    public static Intent getOpenFacebookIntent(Context context) {
@@ -224,6 +260,71 @@ public class OurStoryFragment extends Fragment {
 //                    Uri.parse("https://www.facebook.com/aledat89")); //catches and opens a url to the desired page
 //        }
 //    }
+
+
+
+    public void SetCVListener(View image)
+    {
+
+        String url = "";
+
+        switch (image.getId())
+        {
+            case R.id.imageView_cv_ee:
+                url="http://www.trivotracker.com/CV/ELISA_EPIFANI_CV.pdf";
+                break;
+            case R.id.imageView_cv_lc:
+                url="http://www.trivotracker.com/CV/LUCA_CARABETTA_CV.pdf";
+                break;
+            case R.id.imageView_cv_mc:
+                url="http://www.trivotracker.com/CV/MICHELE_COCCA_CV.pdf";
+                break;
+            case R.id.imageView_cv_ms:
+                url="http://www.trivotracker.com/CV/MIRKO_SALVIA_CV.pdf";
+                break;
+            case R.id.imageView_cv_ac:
+                url="http://www.trivotracker.com/CV/ALESSANDRO_CAPIZZI_CV.pdf";
+                break;
+            case R.id.imageView_cv_st:
+                url="http://www.trivotracker.com/CV/SILVIA_TORTORELLA_CV.pdf";
+                break;
+            case R.id.imageView_cv_gb:
+                url="http://www.trivotracker.com/CV/GIANLUCA_BLUA_CV.pdf";
+                break;
+        }
+
+        final String finalUrl = url;
+        image.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent curriculumvitaeIntent = getOpenCurriculmVitaeIntent(getActivity(), finalUrl);
+                startActivity(curriculumvitaeIntent);
+            }
+        });
+
+    }
+
+    public static Intent getOpenCurriculmVitaeIntent(Context context, String url) {
+
+
+//        try {
+//            context.getPackageManager()
+//                    .getPackageInfo("com.adobe.reader", 0); //Checks if LI is even installed.
+//            return new Intent(Intent.ACTION_VIEW,
+//                    Uri.parse("linkedin://user?screen_name=" + id)); //Trys to make intent with LI's URI
+//        } catch (Exception e) {
+//            return new Intent(Intent.ACTION_VIEW,
+//                    Uri.parse(url)); //catches and opens a url to the desired page
+//        }
+
+
+        return new Intent(Intent.ACTION_VIEW,
+                Uri.parse(url)); //catches and opens a url to the desired page
+
+    }
+
 
 
     // TODO: Rename method, update argument and hook method into UI event

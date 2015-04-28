@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView3"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/luca" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -67,16 +67,26 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageView_li_ee"
+                        android:id="@+id/imageView_li_lc"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:focusableInTouchMode="false"
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageView_tw_ee"
+                        android:id="@+id/imageView_tw_lc"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_lc"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -90,21 +100,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/ourstory_name_ee"
+                    android:text="@string/ourstory_name_lc"
                     android:id="@+id/textView22" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/ourstory_subdesc_ee"
+                    android:text="@string/ourstory_subdesc_lc"
                     android:id="@+id/textView27" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/ourstory_desc_ee"
+                    android:text="@string/ourstory_desc_lc"
                     android:id="@+id/textView21" />
 
             </LinearLayout>
@@ -140,21 +150,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/ourstory_name_lc"
+                    android:text="@string/ourstory_name_ee"
                     android:id="@+id/textView23" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/ourstory_subdesc_lc"
+                    android:text="@string/ourstory_subdesc_ee"
                     android:id="@+id/textView28" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/ourstory_desc_lc"
+                    android:text="@string/ourstory_desc_ee"
                     android:id="@+id/textView24" />
             </LinearLayout>
 
@@ -171,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView16"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/elisa" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -181,16 +191,26 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageView_li_lc"
+                        android:id="@+id/imageView_li_ee"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:focusableInTouchMode="false"
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageView_tw_lc"
+                        android:id="@+id/imageView_tw_ee"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_ee"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -216,7 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/michele" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -228,14 +248,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_li_mc"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_tw_mc"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_mc"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -323,7 +352,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView5"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/mirko" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -335,14 +364,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_li_ms"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_tw_ms"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_ms"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -368,7 +406,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView6"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/alessandro" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -380,14 +418,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_li_ac"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_tw_ac"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_ac"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -475,7 +522,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView9"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/silvia" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -487,14 +534,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_li_st"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_tw_st"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_st"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -520,7 +576,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView7"
-                    android:src="@drawable/face" />
+                    android:src="@drawable/gianluca" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -532,14 +588,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_li_gb"
                         android:src="@drawable/linkedin_logo"
-                        android:padding="5dp" />
+                        android:paddingTop="5dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView_tw_gb"
                         android:src="@drawable/twitter_logo"
-                        android:padding="5dp" />
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_cv_gb"
+                        android:src="@drawable/cv_logo"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp" />
                 </LinearLayout>
             </LinearLayout>
 
