@@ -65,7 +65,7 @@ public class RssParser {
                     if (item!=null) item.setDescription(description);
                     break;
                 }
-                case "enclosure":
+                case "content:encoded":
                 {
                     image = readImage(parser);
                     if (item!=null) item.setImageUrl(image);
@@ -98,10 +98,23 @@ public class RssParser {
     }
 
     private String readImage(XmlPullParser parser) throws XmlPullParserException, IOException {
-        parser.require(XmlPullParser.START_TAG, ns, "enclosure");
-        String image = parser.getAttributeValue(ns, "url");
-        String img = readText(parser);
-        parser.require(XmlPullParser.END_TAG, ns, "enclosure");
+        parser.require(XmlPullParser.START_TAG, ns, "content:encoded");
+        String image = null; //parser.getAttributeValue(ns, "url");
+        String content_encoded = readText(parser);
+        int posImg = content_encoded.indexOf("<img ");
+        if (posImg >= 0)
+        {
+            String img = content_encoded.substring(posImg+5);
+            int posSrc = img.indexOf("src=\"");
+            if (posSrc>=0)
+            {
+                String src = img.substring(posSrc+5);
+                int posApici = src.indexOf("\"");
+                if (posApici>=0)
+                    image = src.substring(0,posApici);
+            }
+        }
+        parser.require(XmlPullParser.END_TAG, ns, "content:encoded");
         return image;
     }
 

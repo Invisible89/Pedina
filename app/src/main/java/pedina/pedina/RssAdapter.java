@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -63,8 +64,14 @@ public class RssAdapter extends BaseAdapter {
 
         //new ImageLoadTask("http://www.trivotracker.com/wp-content/uploads/2015/04/logo-completo-colorato-01-300x159.jpg", holder.image_rss).execute();
         String imgUrl = items.get(position).getImageUrl();
-        if (imgUrl !=null && !imgUrl.isEmpty())
+        if (imgUrl !=null && !imgUrl.isEmpty()) {
             new ImageLoadTask(imgUrl, holder.image_rss).execute();
+            int width = 300;
+            int height = 300;
+            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width,height);
+            holder.image_rss.setLayoutParams(parms);
+        }
+
 
         return convertView;
     }
