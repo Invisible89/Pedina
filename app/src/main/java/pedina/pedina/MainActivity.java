@@ -27,8 +27,9 @@ public class MainActivity extends ActionBarActivity
         ForChildrenAndPetFragment.OnFragmentInteractionListener,
         WirelessChargerFragment.OnFragmentInteractionListener,
         OurStoryFragment.OnFragmentInteractionListener,
-        NewsFragment.OnFragmentInteractionListener
-                    {
+        NewsFragment.OnFragmentInteractionListener,
+        Timeline.OnFragmentInteractionListener
+{
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -104,6 +105,10 @@ public class MainActivity extends ActionBarActivity
                 fragment = new OurStoryFragment();
                 break;
             case 7:
+                mTitle = getString(R.string.timeline);
+                fragment = new Timeline();
+                break;
+            case 8:
                 mTitle = getString(R.string.news);
                 fragment = new NewsFragment();
                 break;
@@ -141,6 +146,9 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.our_story);
                 break;
             case 8:
+                mTitle = getString(R.string.timeline);
+                break;
+            case 9:
                 mTitle = getString(R.string.news);
                 break;
         }

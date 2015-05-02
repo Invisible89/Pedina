@@ -61,15 +61,16 @@ public class RssAdapter extends BaseAdapter {
         }
         holder.text_title_rss.setText(items.get(position).getTitle());
         holder.text_desc_rss.setText(items.get(position).getDescription());
+        holder.image_rss.setImageBitmap(null);
+        int width = 0;
+        int height = 0;
+        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width,height);
+        holder.image_rss.setLayoutParams(parms);
 
         //new ImageLoadTask("http://www.trivotracker.com/wp-content/uploads/2015/04/logo-completo-colorato-01-300x159.jpg", holder.image_rss).execute();
         String imgUrl = items.get(position).getImageUrl();
         if (imgUrl !=null && !imgUrl.isEmpty()) {
             new ImageLoadTask(imgUrl, holder.image_rss).execute();
-            int width = 300;
-            int height = 300;
-            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width,height);
-            holder.image_rss.setLayoutParams(parms);
         }
 
 
@@ -112,6 +113,10 @@ public class RssAdapter extends BaseAdapter {
         protected void onPostExecute(Bitmap result) {
             super.onPostExecute(result);
             imageView.setImageBitmap(result);
+            int width = 300;
+            int height = 300;
+            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width,height);
+            imageView.setLayoutParams(parms);
         }
 
     }
