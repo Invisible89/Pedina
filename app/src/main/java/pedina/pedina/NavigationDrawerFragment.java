@@ -22,6 +22,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
@@ -97,22 +100,25 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
+        mDrawerListView.setAdapter(new DrawerAdapter(
                 getActionBar().getThemedContext(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                new String[]{
-                        getString(R.string.home),
-                        getString(R.string.trivo),
-                        getString(R.string.business_card),
-                        getString(R.string.wireless_charger),
-                        getString(R.string.for_children_and_pets),
-                        getString(R.string.for_veicle),
-                        getString(R.string.our_story),
-                        getString(R.string.news),
-                }));
+                getDrawerItemList()));
+
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
+    }
+
+    private List<DrawerItem> getDrawerItemList() {
+        ArrayList<DrawerItem> list = new ArrayList<DrawerItem>();
+        list.add(new DrawerItem(R.string.home, R.drawable.drawer_home));
+        list.add(new DrawerItem(R.string.trivo, R.drawable.drawer_trivo));
+        list.add(new DrawerItem(R.string.business_card, R.drawable.drawer_card));
+        list.add(new DrawerItem(R.string.wireless_charger, R.drawable.drawer_wireless));
+        list.add(new DrawerItem(R.string.for_children_and_pets, R.drawable.drawer_child));
+        list.add(new DrawerItem(R.string.for_veicle, R.drawable.drawer_bike));
+        list.add(new DrawerItem(R.string.our_story, R.drawable.drawer_story));
+        list.add(new DrawerItem(R.string.news, R.drawable.drawer_news));
+        return list;
     }
 
     public boolean isDrawerOpen() {
