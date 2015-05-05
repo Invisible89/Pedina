@@ -178,18 +178,18 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:id="@+id/imageView13"
-                            android:src="@drawable/tracker_front"
-                            android:padding="20dp" />
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:id="@+id/imageView13"-->
+                            <!--android:src="@drawable/tracker_front"-->
+                            <!--android:padding="20dp" />-->
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:id="@+id/imageView20"
-                            android:src="@drawable/trackers_row" />
+                            android:src="@drawable/trackers_key" />
                     </LinearLayout>
 
                 </LinearLayout>

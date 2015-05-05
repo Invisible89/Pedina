@@ -14,432 +14,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="First Meeting"
-                android:id="@+id/textView38"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/first_meeting"
-                android:id="@+id/imageView26"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="FEB 2015"
-                android:id="@+id/textView37"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Ideas &amp; Researches"
-                android:id="@+id/textView39"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/ideas_e_researches"
-                android:id="@+id/imageView27"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="FEB 2015"
-                android:id="@+id/textView47"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Electronics"
-                android:id="@+id/textView48"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/electronics_2"
-                android:id="@+id/imageView28"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="FEB-MAR 2015"
-                android:id="@+id/textView49"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Mechanics"
-                android:id="@+id/textView54"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/mechanics"
-                android:id="@+id/imageView29"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="MAR 2015"
-                android:id="@+id/textView55"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:paddingBottom="20dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Design &amp; Styling"
-                android:id="@+id/textView56"
+                android:text="Delivery"
+                android:id="@+id/textView78"
                 android:layout_gravity="center_horizontal" />
 
             <ImageView
                 android:layout_width="184dp"
                 android:layout_height="184dp"
-                android:src="@drawable/design_e_styling"
-                android:id="@+id/imageView31"
+                android:src="@drawable/delivery"
+                android:id="@+id/imageView42"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="MAR 2015"
-                android:id="@+id/textView57"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="App Development"
-                android:id="@+id/textView58"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/app_development"
-                android:id="@+id/imageView32"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="APR 2015"
-                android:id="@+id/textView59"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Social &amp; Website"
-                android:id="@+id/textView60"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/social_e_website"
-                android:id="@+id/imageView33"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="APR 2015"
-                android:id="@+id/textView61"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Indiegogo Setup"
-                android:id="@+id/textView62"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/indiegogo_setup"
-                android:id="@+id/imageView34"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="APR 2015"
-                android:id="@+id/textView63"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Business Plan"
-                android:id="@+id/textView64"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/business_plan"
-                android:id="@+id/imageView35"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="APR 2015"
-                android:id="@+id/textView65"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Indiegogo Campaign"
-                android:id="@+id/textView66"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/indiegogo_campaign"
-                android:id="@+id/imageView36"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="MAY-JUN 2015"
-                android:id="@+id/textView67"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Electronics"
-                android:id="@+id/textView68"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/electronics"
-                android:id="@+id/imageView37"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="JUL-SEP 2015"
-                android:id="@+id/textView69"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="3D Printers"
-                android:id="@+id/textView70"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/printers_3d"
-                android:id="@+id/imageView38"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="AUG 2015"
-                android:id="@+id/textView71"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="First Prototype"
-                android:id="@+id/textView72"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/first_prototype"
-                android:id="@+id/imageView39"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="OCT 2015"
-                android:id="@+id/textView73"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="20dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Beta Testing"
-                android:id="@+id/textView74"
-                android:layout_gravity="center_horizontal" />
-
-            <ImageView
-                android:layout_width="184dp"
-                android:layout_height="184dp"
-                android:src="@drawable/beta_testing"
-                android:id="@+id/imageView40"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="NOV 2015"
-                android:id="@+id/textView75"
+                android:text="FEB 2016"
+                android:id="@+id/textView79"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
 
@@ -485,23 +82,426 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Delivery"
-                android:id="@+id/textView78"
+                android:text="Beta Testing"
+                android:id="@+id/textView74"
                 android:layout_gravity="center_horizontal" />
 
             <ImageView
                 android:layout_width="184dp"
                 android:layout_height="184dp"
-                android:src="@drawable/delivery"
-                android:id="@+id/imageView42"
+                android:src="@drawable/beta_testing"
+                android:id="@+id/imageView40"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="FEB 2016"
-                android:id="@+id/textView79"
+                android:text="NOV 2015"
+                android:id="@+id/textView75"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="First Prototype"
+                android:id="@+id/textView72"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/first_prototype"
+                android:id="@+id/imageView39"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="OCT 2015"
+                android:id="@+id/textView73"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="3D Printers"
+                android:id="@+id/textView70"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/printers_3d"
+                android:id="@+id/imageView38"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="AUG 2015"
+                android:id="@+id/textView71"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Electronics"
+                android:id="@+id/textView68"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/electronics"
+                android:id="@+id/imageView37"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="JUL-SEP 2015"
+                android:id="@+id/textView69"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Indiegogo Campaign"
+                android:id="@+id/textView66"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/indiegogo_campaign"
+                android:id="@+id/imageView36"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MAY-JUN 2015"
+                android:id="@+id/textView67"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Business Plan"
+                android:id="@+id/textView64"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/business_plan"
+                android:id="@+id/imageView35"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="APR 2015"
+                android:id="@+id/textView65"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Indiegogo Setup"
+                android:id="@+id/textView62"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/indiegogo_setup"
+                android:id="@+id/imageView34"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="APR 2015"
+                android:id="@+id/textView63"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Social &amp; Website"
+                android:id="@+id/textView60"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/social_e_website"
+                android:id="@+id/imageView33"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="APR 2015"
+                android:id="@+id/textView61"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="App Development"
+                android:id="@+id/textView58"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/app_development"
+                android:id="@+id/imageView32"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="APR 2015"
+                android:id="@+id/textView59"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Design &amp; Styling"
+                android:id="@+id/textView56"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/design_e_styling"
+                android:id="@+id/imageView31"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MAR 2015"
+                android:id="@+id/textView57"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mechanics"
+                android:id="@+id/textView54"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/mechanics"
+                android:id="@+id/imageView29"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MAR 2015"
+                android:id="@+id/textView55"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Electronics"
+                android:id="@+id/textView48"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/electronics_2"
+                android:id="@+id/imageView28"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FEB-MAR 2015"
+                android:id="@+id/textView49"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ideas &amp; Researches"
+                android:id="@+id/textView39"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/ideas_e_researches"
+                android:id="@+id/imageView27"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FEB 2015"
+                android:id="@+id/textView47"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="First Meeting"
+                android:id="@+id/textView38"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:src="@drawable/first_meeting"
+                android:id="@+id/imageView26"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FEB 2015"
+                android:id="@+id/textView37"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
 

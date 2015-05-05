@@ -56,7 +56,7 @@
 
     <string name="ourstory_name_ee">Elisa Epifani</string>
     <string name="ourstory_subdesc_ee">CFO and marketing</string>
-    <string name="ourstory_desc_ee">Economist mastering international marketing at University of Turin (Italy)</string>
+    <string name="ourstory_desc_ee">Master Degree in Business Management, Marketing and Strategy at the University of Turin.</string>
 
     <string name="ourstory_name_lc">Luca Carabetta</string>
     <string name="ourstory_subdesc_lc">CEO</string>
@@ -64,11 +64,11 @@
 
     <string name="ourstory_name_mc">Michele Cocca</string>
     <string name="ourstory_subdesc_mc">CTO</string>
-    <string name="ourstory_desc_mc">Information Technology engineer, soon graduated at Polytechnic University of Turin, Rugby player.</string>
+    <string name="ourstory_desc_mc">Information Technology engineer, shortly graduated at the Polytechnic University of Turin.</string>
 
     <string name="ourstory_name_ms">Mirko Salvia</string>
     <string name="ourstory_subdesc_ms">CIO</string>
-    <string name="ourstory_desc_ms">Information Technology engineer, years of experience in programming, head of software</string>
+    <string name="ourstory_desc_ms">Senior Software Developer, years of experience in programming, head of software</string>
 
     <string name="ourstory_name_ac">Alessandro Capizzi</string>
     <string name="ourstory_subdesc_ac">CDO</string>
