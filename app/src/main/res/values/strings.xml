@@ -3,13 +3,14 @@
 
     <string name="home" translatable="false">Home</string>
     <string name="trivo" translatable="false">Trivo</string>
-    <string name="business_card" translatable="false">Business card</string>
+    <string name="business_card">Business card</string>
     <string name="wireless_charger">Wireless charger</string>
     <string name="for_children_and_pets">For who you love</string>
     <string name="for_veicle">For cars, bikes, motorcycles and drones</string>
     <string name="our_story">Our story</string>
     <string name="news" translatable="false">News</string>
     <string name="timeline" translatable="false">Timeline</string>
+    <string name="howtocontribute">How to contribute</string>
 
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
@@ -23,7 +24,16 @@
     <!--<string name="popup_bluetooth">To find your objects in a short range distance; your smartphone will also ring if you go far from your objects!</string>-->
     <!--<string name="popup_gps">To find your objects all over the world. Ok for your child, pet, car or bike. Available only for the GPS device.</string>-->
 
-    <!-- BUSINESS CARD STRINGS-->
+    <!-- TRIVO STRINGS-->
+    <string name="trivo_title" translatable="false">Trackers</string>
+    <string name="trivo_desc">SMALL AND CHEAP, NEVER LOSE WHAT YOU CARE</string>
+
+    <string name="trivo_landscape">Rotate me</string>
+
+    <!-- BUSINESS CARD STRINGS -->
+    <string name="businesscard_title">Business card trackers</string>
+    <string name="businesscard_desc">THE BEST SOLUTION FOR WALLETS</string>
+
     <string name="businesscard_gps_title">GPS VERSION</string>
     <string name="businesscard_gps_desc">You can locate anything all over the world. Bluetooth included to find objects near you and in enclosed spaces.</string>
 
@@ -40,7 +50,10 @@
     <string name="businesscard_as_desc">Our trackers can be used only by its owner and we guarantee a completely anonymous and secure service.</string>
 
     <!-- OUR STORY STRINGS-->
-    <string name="ourstory_storytitle">BEING A STARTUP MEANS TO CREATE SOMETHING FROM NOTHING</string>
+    <string name="ourstory_title_1">BEING A STARTUP MEANS TO</string>
+    <string name="ourstory_title_2">CREATE SOMETHING</string>
+    <string name="ourstory_title_3">FROM NOTHING</string>
+
     <string name="ourstory_storydesc">Our team was born at the beginning of 2015 in order to create something from nothing, this was and is our goal. We have worked hard for months to develop an idea, studying how to give the best product to thousands of costumers all over the world. Here we are with Trivo, the most little and cheapest GPS tracking device all over the world, we are going to change your life forever: no more lost wallets or keys and the things you care the most always with you.\nWe are here to ask you for your help to start our dream, with a little contribution you will have our first products and you will be able to really support our startup.</string>
 
     <string name="ourstory_name_ee" translatable="false">Elisa Epifani</string>
@@ -72,7 +85,10 @@
     <string name="ourstory_desc_gb">Motor science student at University of Turin, event organizer and promoter, social addicted</string>
 
 
-    <!-- WIRELESS CHARGER STRINGS-->
+    <!-- WIRELESS CHARGER STRINGS -->
+    <string name="wirelesscharger_title">Wireless charger</string>
+    <string name="wirelesscharger_des">INNOVATIVE SYSTEM TO CHANGE YOUR DEVICE WITH A WIRELESS TECHNOLOGY</string>
+
     <string name="wirelesscharger_wf_title" translatable="false">QI WIRELESS</string>
     <string name="wirelesscharger_wf_desc">Our devices are Qi Wireless charging compatible, you can also charge your phone!</string>
 
@@ -83,17 +99,23 @@
     <string name="wirelesscharger_po_desc">The Wireless charger is so small that you can keep it with you everywhere.</string>
 
 
-    <!-- FOR CHILDREN AND PETS STRINGS-->
-    <string name="forchildrenandpets_awy_title">ALWAYS WITH YOU</string>
-    <string name="forchildrenandpets_awy_desc">Features that warn you when your child is leaving in order to prevent him to escape.</string>
+    <!-- FOR WHO YOU LOVE STRINGS -->
+    <string name="forwhoyoulove_title">For who you love</string>
+    <string name="forwhoyoulove_desc">KEEP YOUR CHILD ALWAYS WITH YOU, TRACK YOUR ESCAPED PET</string>
 
-    <string name="forchildrenandpets_al_title">AREA LIMITS</string>
-    <string name="forchildrenandpets_al_desc">If your child goes beyond the limits you fixed with our application, you will receive a notification.</string>
+    <string name="forwhoyoulove_awy_title">ALWAYS WITH YOU</string>
+    <string name="forwhoyoulove_awy_desc">Features that warn you when your child is leaving in order to prevent him to escape.</string>
 
-    <string name="forchildrenandpets_w_title">WEARABLE</string>
-    <string name="forchildrenandpets_w_desc">Our bracelet can be easily worn and it does not hurt.</string>
+    <string name="forwhoyoulove_al_title">AREA LIMITS</string>
+    <string name="forwhoyoulove_al_desc">If your child goes beyond the limits you fixed with our application, you will receive a notification.</string>
 
-    <!-- FOR VEICLE STRINGS-->
+    <string name="forwhoyoulove_w_title">WEARABLE</string>
+    <string name="forwhoyoulove_w_desc">Our bracelet can be easily worn and it does not hurt.</string>
+
+    <!-- FOR VEICLE STRINGS -->
+    <string name="forveicle_title">For cars, bikes, motorcycles and drones</string>
+    <string name="forveicle_desc">WHERE DID YOU PARK? WHERE\'S YOUR LOST DRONE?</string>
+
     <string name="forveicle_at_title">ANTI-THIEF</string>
     <string name="forveicle_at_desc">Fixed to your bike or car, you can open it only thanks to a numerical combination.</string>
 
@@ -106,4 +128,42 @@
     <string name="land_battery">Lithium-polymer battery</string>
     <string name="land_qi">Qi Wireless charging system</string>
 
+    <!--<string name="forveicle_wc_title">WIRELESS CHARGING</string>-->
+    <!--<string name="forveicle_wc_desc">The primary charging method for our devices is Qi Wireless, a USB port is also included.</string>-->
+
+    <!-- HOW TO CONTRIBUTE -->
+    <string name="howtocontribute_desc">Trivo was born from an idea, in a few months seven guys developed products to change people’s life in better, using the best available technologies thanks to experienced partners.\n\nHow could we make all of this real? The answer was: crowdfunding! After some researches we choose Indiegogo. What’s all of this about?\n\nCrowdfunding is a way to get the seed capital for your business and it fits for our situation: we have the idea, we could start tomorrow manufacturing but we do not have the money to do it! Indiegogo is going to help us, on Indiegogo you can show your idea to the world and the world will support you if you have something innovative, useful and needed.\n\nHow? You can pre-order one of our products and – by doing this – finance our project so that we can start the early stages of the business and send you the product as soon as possible. All you need to contribute is a PayPal account.\n\nThe easiest way to contribute is to choose a perk from our product page present on this website, you can also visit directly our Indiegogo page.\n\nFor every kind of problem or question about this point we suggest you to contact us at support@trivotracker.com.</string>
+    <string name="howtocontribute_desc_1">Trivo was born from an idea, in a few months seven guys developed products to change people’s life in better, using the best available technologies thanks to experienced partners.\n\nHow could we make all of this real? The answer was: crowdfunding! After some researches we choose Indiegogo. What’s all of this about?</string>
+    <string name="howtocontribute_desc_2">Crowdfunding is a way to get the seed capital for your business and it fits for our situation: we have the idea, we could start tomorrow manufacturing but we do not have the money to do it! Indiegogo is going to help us, on Indiegogo you can show your idea to the world and the world will support you if you have something innovative, useful and needed.\n\nHow? You can pre-order one of our products and – by doing this – finance our project so that we can start the early stages of the business and send you the product as soon as possible. All you need to contribute is a PayPal account.</string>
+    <string name="howtocontribute_desc_3">The easiest way to contribute is to choose a perk from our product page present on this website, you can also visit directly our Indiegogo page.\n\nFor every kind of problem or question about this point we suggest you to contact us at support@trivotracker.com.</string>
+
+    <!-- TIMELINE -->
+    <string name="timeline_1">Delivery</string>
+    <string name="timeline_2">Mass Production</string>
+    <string name="timeline_3">Beta Testing</string>
+    <string name="timeline_4">First Prototype</string>
+    <string name="timeline_5">3D Printers</string>
+    <string name="timeline_6">Electronics</string>
+    <string name="timeline_7">Indiegogo Campaign</string>
+    <string name="timeline_8">Business Plan</string>
+    <string name="timeline_9">Indiegogo Setup</string>
+    <string name="timeline_10">Social and Website</string>
+    <string name="timeline_11">App Development</string>
+    <string name="timeline_12">Design and Styling</string>
+    <string name="timeline_13">Mechanics</string>
+    <string name="timeline_14">Electronics</string>
+    <string name="timeline_15">Ideas and Researches</string>
+    <string name="timeline_16">First Meeting</string>
+
+    <!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--<string name="hello_blank_fragment_news">Hello blank fragment NEWS</string>-->
+    <!--<string name="hello_blank_fragment_home">Hello blank fragment HOME</string>-->
+    <!--<string name="hello_blank_fragment_ourstory">Hello blank fragment OUR STORY</string>-->
+    <!--<string name="hello_blank_fragment_pedina">Hello blank fragment PEDINA</string>-->
+
+<!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <!--<string name="title_activity_main_activity2">MainActivity2Activity</string>-->
+
+    <!--<string name="hello_world">Hello world!</string>-->
 </resources>

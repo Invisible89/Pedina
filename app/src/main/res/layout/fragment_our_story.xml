@@ -20,20 +20,70 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp" >
 
-                <ImageView
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageView8"
-                    android:src="@drawable/ourstory_storytitle"
-                    android:padding="5dp" />
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/ourstory_title_1"
+                        android:id="@+id/textView99"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textIsSelectable="true"
+                        android:paddingTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/ourstory_title_2"
+                        android:id="@+id/textView100"
+                        android:textColor="#ff000000"
+                        android:textSize="16dp"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/ourstory_title_3"
+                        android:id="@+id/textView101"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="@string/ourstory_storydesc"
-                    android:id="@+id/textView9" />
+                    android:id="@+id/textView9"
+                    android:paddingTop="10dp" />
+
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView13"
+                android:src="@drawable/group" />
         </LinearLayout>
 
         <LinearLayout

@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ForChildrenAndPetFragment.OnFragmentInteractionListener} interface
+ * {@link ForWhoYouLoveFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ForChildrenAndPetFragment#newInstance} factory method to
+ * Use the {@link ForWhoYouLoveFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ForChildrenAndPetFragment extends Fragment {
+public class ForWhoYouLoveFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -38,8 +38,8 @@ public class ForChildrenAndPetFragment extends Fragment {
      * @return A new instance of fragment ToolsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ForChildrenAndPetFragment newInstance(String param1, String param2) {
-        ForChildrenAndPetFragment fragment = new ForChildrenAndPetFragment();
+    public static ForWhoYouLoveFragment newInstance(String param1, String param2) {
+        ForWhoYouLoveFragment fragment = new ForWhoYouLoveFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -47,7 +47,7 @@ public class ForChildrenAndPetFragment extends Fragment {
         return fragment;
     }
 
-    public ForChildrenAndPetFragment() {
+    public ForWhoYouLoveFragment() {
         // Required empty public constructor
     }
 
@@ -64,7 +64,7 @@ public class ForChildrenAndPetFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_for_children_and_pet, container, false);
+        return inflater.inflate(R.layout.fragment_for_who_you_love, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

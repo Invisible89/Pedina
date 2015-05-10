@@ -1,7 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:id="@+id/scrollView">
 
     <RelativeLayout android:layout_width="match_parent"
@@ -11,11 +11,11 @@
         <!-- TODO: Update blank fragment layout -->
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/image_explosion"
             android:layout_gravity="center"
-            android:src="@drawable/esplosione"
+            android:src="@drawable/esplosione_2"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="36dp" />
@@ -33,13 +33,10 @@
             android:elegantTextHeight="false"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_alignTop="@+id/image_explosion"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="71dp"
-            android:layout_marginStart="71dp"
-            android:layout_marginTop="22dp"
-            android:textSize="10sp"/>
+            android:textSize="10sp"
+            android:layout_alignTop="@+id/textView46"
+            android:layout_alignLeft="@+id/image_explosion"
+            android:layout_alignStart="@+id/image_explosion" />
 
         <TextView
             android:layout_width="60dp"
@@ -54,13 +51,12 @@
             android:elegantTextHeight="false"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginLeft="37dp"
-            android:layout_marginStart="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:textSize="10sp"
-            android:layout_below="@+id/textView41"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/textView41"
-            android:layout_toEndOf="@+id/textView41"
-            android:layout_marginTop="31dp" />
+            android:layout_toEndOf="@+id/textView41" />
 
         <TextView
             android:layout_width="60dp"
@@ -76,9 +72,10 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="10sp"
-            android:layout_below="@+id/textView41"
+            android:layout_alignTop="@+id/image_explosion"
             android:layout_toRightOf="@+id/textView42"
-            android:layout_toEndOf="@+id/textView42" />
+            android:layout_toEndOf="@+id/textView42"
+            android:layout_marginTop="15dp" />
 
         <TextView
             android:layout_width="60dp"
@@ -94,10 +91,9 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="10sp"
-            android:layout_below="@+id/textView42"
-            android:layout_toRightOf="@+id/textView42"
-            android:layout_toEndOf="@+id/textView42"
-            android:layout_marginTop="44dp" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView43"
+            android:layout_alignStart="@+id/textView43" />
 
         <TextView
             android:layout_width="60dp"
@@ -113,9 +109,11 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="10sp"
-            android:layout_below="@+id/textView42"
-            android:layout_toRightOf="@+id/textView44"
-            android:layout_toEndOf="@+id/textView44" />
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_alignTop="@+id/textView43"
+            android:layout_toRightOf="@+id/textView43"
+            android:layout_toEndOf="@+id/textView43" />
 
         <TextView
             android:layout_width="60dp"
@@ -131,11 +129,12 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="10sp"
-            android:layout_alignTop="@+id/textView43"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_alignBottom="@+id/textView43"
             android:layout_toRightOf="@+id/textView45"
             android:layout_toEndOf="@+id/textView45"
-            android:layout_marginLeft="47dp"
-            android:layout_marginStart="47dp" />
+            android:layout_marginBottom="18dp" />
 
 
     </RelativeLayout>

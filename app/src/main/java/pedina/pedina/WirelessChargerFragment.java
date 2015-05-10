@@ -1,12 +1,15 @@
 package pedina.pedina;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 /**
@@ -64,7 +67,42 @@ public class WirelessChargerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_wireless_charger, container, false);
+//        return inflater.inflate(R.layout.fragment_wireless_charger, container, false);
+
+        View rootView = inflater.inflate(R.layout.fragment_wireless_charger, container, false);
+
+        ImageView qi_logo = (ImageView) rootView.findViewById(R.id.imageView_qi_logo);
+        SetLogoListener(qi_logo);
+
+        return rootView;
+
+    }
+
+    public void SetLogoListener(View image) {
+
+        String url = "";
+
+        switch (image.getId()) {
+            case R.id.imageView_qi_logo:
+                url = "http://www.wirelesspowerconsortium.com/";
+                break;
+        }
+
+        final String finalUrl = url;
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent twitterIntent = getOpenLogoIntent(getActivity(), finalUrl);
+                startActivity(twitterIntent);
+            }
+        });
+
+    }
+
+    public static Intent getOpenLogoIntent(Context context, String url) {
+
+        return new Intent(Intent.ACTION_VIEW,Uri.parse(url)); //catches and opens a url to the desired page
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

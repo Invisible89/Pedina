@@ -116,6 +116,7 @@ public class NavigationDrawerFragment extends Fragment {
         list.add(new DrawerItem(R.string.wireless_charger, R.drawable.drawer_wireless));
         list.add(new DrawerItem(R.string.for_children_and_pets, R.drawable.drawer_child));
         list.add(new DrawerItem(R.string.for_veicle, R.drawable.drawer_bike));
+        list.add(new DrawerItem(R.string.howtocontribute, R.drawable.drawer_news));
         list.add(new DrawerItem(R.string.our_story, R.drawable.drawer_story));
         list.add(new DrawerItem(R.string.timeline, R.drawable.drawer_timeline));
         list.add(new DrawerItem(R.string.news, R.drawable.drawer_news));

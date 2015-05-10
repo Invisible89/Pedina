@@ -9,25 +9,40 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:padding="5dp" >
+            android:padding="5dp"
+            android:gravity="center">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView8"
-                android:src="@drawable/wirelesscharger_title"
-                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/wirelesscharger_title"
+                android:id="@+id/textView4"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textIsSelectable="true"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/wirelesscharger_des"
+                android:id="@+id/textView5"
+                android:textColor="#ff000000"
+                android:textSize="7dp"
+                android:textIsSelectable="true" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="5dp">
+            android:layout_height="fill_parent">
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
@@ -40,8 +55,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="310dp"
+                        android:layout_height="270dp"
                         android:id="@+id/imageView15"
                         android:src="@drawable/wireless_charger"
                         android:adjustViewBounds="false"
@@ -50,11 +65,11 @@
                         android:cropToPadding="false"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
-                        android:padding="20dp" />
+                        android:layout_marginLeft="26dp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="310dp"
+                        android:layout_height="270dp"
                         android:id="@+id/imageView18"
                         android:src="@drawable/magnetic_induction"
                         android:adjustViewBounds="false"
@@ -63,10 +78,19 @@
                         android:cropToPadding="false"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
-                        android:padding="20dp" />
+                        android:layout_marginLeft="26dp"
+                        android:paddingRight="20dp" />
 
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_qi_logo"
+                android:src="@drawable/qi_logo"
+                android:layout_gravity="right"
+                android:padding="5dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -99,6 +123,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="@string/wirelesscharger_wf_desc"
                         android:id="@+id/textView15" />
+
                 </LinearLayout>
 
             </LinearLayout>

@@ -24,11 +24,12 @@ public class MainActivity extends ActionBarActivity
         TrivoFragment.OnFragmentInteractionListener,
         BusinessCardFragment.OnFragmentInteractionListener,
         ForVeicle.OnFragmentInteractionListener,
-        ForChildrenAndPetFragment.OnFragmentInteractionListener,
+        ForWhoYouLoveFragment.OnFragmentInteractionListener,
         WirelessChargerFragment.OnFragmentInteractionListener,
         OurStoryFragment.OnFragmentInteractionListener,
         NewsFragment.OnFragmentInteractionListener,
-        Timeline.OnFragmentInteractionListener
+        TimelineFragment.OnFragmentInteractionListener,
+        HowToContributeFragment.OnFragmentInteractionListener
 {
 
     /**
@@ -94,21 +95,25 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 4:
                 mTitle = getString(R.string.for_children_and_pets);
-                fragment = new ForChildrenAndPetFragment();
+                fragment = new ForWhoYouLoveFragment();
                 break;
             case 5:
                 mTitle = getString(R.string.for_veicle);
                 fragment = new ForVeicle();
                 break;
             case 6:
+                mTitle = getString(R.string.howtocontribute);
+                fragment = new HowToContributeFragment();
+                break;
+            case 7:
                 mTitle = getString(R.string.our_story);
                 fragment = new OurStoryFragment();
                 break;
-            case 7:
-                mTitle = getString(R.string.timeline);
-                fragment = new Timeline();
-                break;
             case 8:
+                mTitle = getString(R.string.timeline);
+                fragment = new TimelineFragment();
+                break;
+            case 9:
                 mTitle = getString(R.string.news);
                 fragment = new NewsFragment();
                 break;
@@ -143,12 +148,15 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.for_veicle);
                 break;
             case 7:
-                mTitle = getString(R.string.our_story);
+                mTitle = getString(R.string.howtocontribute);
                 break;
             case 8:
-                mTitle = getString(R.string.timeline);
+                mTitle = getString(R.string.our_story);
                 break;
             case 9:
+                mTitle = getString(R.string.timeline);
+                break;
+            case 10:
                 mTitle = getString(R.string.news);
                 break;
         }

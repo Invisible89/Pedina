@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pedina.pedina.Timeline"
+    tools:context="pedina.pedina.TimelineFragment"
     android:id="@+id/scrollView">
 
     <LinearLayout android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Delivery"
+                android:text="@string/timeline_1"
                 android:id="@+id/textView78"
                 android:layout_gravity="center_horizontal" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Mass Production"
+                android:text="@string/timeline_2"
                 android:id="@+id/textView76"
                 android:layout_gravity="center_horizontal" />
 
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Beta Testing"
+                android:text="@string/timeline_3"
                 android:id="@+id/textView74"
                 android:layout_gravity="center_horizontal" />
 
@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="First Prototype"
+                android:text="@string/timeline_4"
                 android:id="@+id/textView72"
                 android:layout_gravity="center_horizontal" />
 
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="3D Printers"
+                android:text="@string/timeline_5"
                 android:id="@+id/textView70"
                 android:layout_gravity="center_horizontal" />
 
@@ -175,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Electronics"
+                android:text="@string/timeline_6"
                 android:id="@+id/textView68"
                 android:layout_gravity="center_horizontal" />
 
@@ -206,7 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Indiegogo Campaign"
+                android:text="@string/timeline_7"
                 android:id="@+id/textView66"
                 android:layout_gravity="center_horizontal" />
 
@@ -237,7 +237,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Business Plan"
+                android:text="@string/timeline_8"
                 android:id="@+id/textView64"
                 android:layout_gravity="center_horizontal" />
 
@@ -268,7 +268,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Indiegogo Setup"
+                android:text="@string/timeline_9"
                 android:id="@+id/textView62"
                 android:layout_gravity="center_horizontal" />
 
@@ -299,7 +299,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Social &amp; Website"
+                android:text="@string/timeline_10"
                 android:id="@+id/textView60"
                 android:layout_gravity="center_horizontal" />
 
@@ -330,7 +330,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="App Development"
+                android:text="@string/timeline_11"
                 android:id="@+id/textView58"
                 android:layout_gravity="center_horizontal" />
 
@@ -361,7 +361,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Design &amp; Styling"
+                android:text="@string/timeline_12"
                 android:id="@+id/textView56"
                 android:layout_gravity="center_horizontal" />
 
@@ -392,7 +392,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Mechanics"
+                android:text="@string/timeline_13"
                 android:id="@+id/textView54"
                 android:layout_gravity="center_horizontal" />
 
@@ -423,7 +423,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Electronics"
+                android:text="@string/timeline_14"
                 android:id="@+id/textView48"
                 android:layout_gravity="center_horizontal" />
 
@@ -454,7 +454,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Ideas &amp; Researches"
+                android:text="@string/timeline_15"
                 android:id="@+id/textView39"
                 android:layout_gravity="center_horizontal" />
 
@@ -485,7 +485,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="First Meeting"
+                android:text="@string/timeline_16"
                 android:id="@+id/textView38"
                 android:layout_gravity="center_horizontal" />
 
