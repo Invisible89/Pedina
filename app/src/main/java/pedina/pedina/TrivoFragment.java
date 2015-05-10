@@ -69,14 +69,14 @@ public class TrivoFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_trivo, container, false);
 
-        ImageView circle1 = (ImageView) rootView.findViewById(R.id.circle1);
-        ImageView circle2 = (ImageView) rootView.findViewById(R.id.circle2);
-        ImageView circle3 = (ImageView) rootView.findViewById(R.id.circle3);
-        ImageView circle4 = (ImageView) rootView.findViewById(R.id.circle4);
-        if (circle1!=null) SetCircleListener(circle1);
-        if (circle2!=null) SetCircleListener(circle2);
-        if (circle3!=null) SetCircleListener(circle3);
-        if (circle4!=null) SetCircleListener(circle4);
+//        ImageView circle1 = (ImageView) rootView.findViewById(R.id.circle1);
+//        ImageView circle2 = (ImageView) rootView.findViewById(R.id.circle2);
+//        ImageView circle3 = (ImageView) rootView.findViewById(R.id.circle3);
+//        ImageView circle4 = (ImageView) rootView.findViewById(R.id.circle4);
+//        if (circle1!=null) SetCircleListener(circle1);
+//        if (circle2!=null) SetCircleListener(circle2);
+//        if (circle3!=null) SetCircleListener(circle3);
+//        if (circle4!=null) SetCircleListener(circle4);
 
         return rootView;
     }
@@ -134,37 +134,37 @@ public class TrivoFragment extends Fragment {
 
     public void onCircleClicked(View image)
     {
-        String text="";
-        String title="";
-        switch (image.getId())
-        {
-            case R.id.circle1:
-                text=getResources().getString(R.string.popup_gps);
-                title="GPS MODE";
-                break;
-            case R.id.circle2:
-                text=getResources().getString(R.string.popup_bluetooth);
-                title="BLUETOOTH";
-                break;
-            case R.id.circle3:
-                text=getResources().getString(R.string.popup_wireless);
-                title="SMART CHARGING";
-                break;
-            case R.id.circle4:
-                text=getResources().getString(R.string.popup_battery);
-                title="INNOVATIVE";
-                break;
-        }
-
-        final Dialog dialog = new Dialog(this.getActivity());
-        dialog.setContentView(R.layout.popup);
-        dialog.setTitle(title);
-        dialog.setCancelable(true);
-
-        TextView textView = (TextView) dialog.findViewById(R.id.text_popup);
-        textView.setText(text);
-
-        dialog.show();
+//        String text="";
+//        String title="";
+//        switch (image.getId())
+//        {
+//            case R.id.circle1:
+//                text=getResources().getString(R.string.popup_gps);
+//                title="GPS MODE";
+//                break;
+//            case R.id.circle2:
+//                text=getResources().getString(R.string.popup_bluetooth);
+//                title="BLUETOOTH";
+//                break;
+//            case R.id.circle3:
+//                text=getResources().getString(R.string.popup_wireless);
+//                title="SMART CHARGING";
+//                break;
+//            case R.id.circle4:
+//                text=getResources().getString(R.string.popup_battery);
+//                title="INNOVATIVE";
+//                break;
+//        }
+//
+//        final Dialog dialog = new Dialog(this.getActivity());
+//        dialog.setContentView(R.layout.popup);
+//        dialog.setTitle(title);
+//        dialog.setCancelable(true);
+//
+//        TextView textView = (TextView) dialog.findViewById(R.id.text_popup);
+//        textView.setText(text);
+//
+//        dialog.show();
 
     }
 

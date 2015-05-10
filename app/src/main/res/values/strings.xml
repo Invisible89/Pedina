@@ -18,10 +18,10 @@
 
     <string name="action_settings" translatable="false">Settings</string>
 
-    <string name="popup_wireless">Qi for wireless charging.</string>
-    <string name="popup_battery">Lithium-polymer battery.\nManifactured with an innovative 3D printer.</string>
-    <string name="popup_bluetooth">To find your objects in a short range distance; your smartphone will also ring if you go far from your objects!</string>
-    <string name="popup_gps">To find your objects all over the world. Ok for your child, pet, car or bike. Available only for the GPS device.</string>
+    <!--<string name="popup_wireless">Qi for wireless charging.</string>-->
+    <!--<string name="popup_battery">Lithium-polymer battery.\nManifactured with an innovative 3D printer.</string>-->
+    <!--<string name="popup_bluetooth">To find your objects in a short range distance; your smartphone will also ring if you go far from your objects!</string>-->
+    <!--<string name="popup_gps">To find your objects all over the world. Ok for your child, pet, car or bike. Available only for the GPS device.</string>-->
 
     <!-- BUSINESS CARD STRINGS-->
     <string name="businesscard_gps_title">GPS VERSION</string>
