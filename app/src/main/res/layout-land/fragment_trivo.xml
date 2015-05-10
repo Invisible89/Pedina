@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="3D printed casing"
+            android:text="@string/land_3d"
             android:id="@+id/textView41"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="M2M SIM"
+            android:text="@string/m2msim"
             android:id="@+id/textView42"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
@@ -65,7 +65,7 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="Bluetooth module"
+            android:text="@string/land_bluetooth"
             android:id="@+id/textView43"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
@@ -83,7 +83,7 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="GPS module"
+            android:text="@string/land_gps"
             android:id="@+id/textView44"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
@@ -102,7 +102,7 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="Lithium-polymer battery"
+            android:text="@string/land_battery"
             android:id="@+id/textView45"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
@@ -120,7 +120,7 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="Qi Wireless charging system"
+            android:text="@string/land_qi"
             android:id="@+id/textView46"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"

@@ -217,14 +217,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/trivo_gps_title"
+                        android:text="@string/businesscard_gps_title"
                         android:id="@+id/textView8" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/trivo_gps_desc"
+                        android:text="@string/businesscard_gps_desc"
                         android:id="@+id/textView13" />
                 </LinearLayout>
 
@@ -252,14 +252,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/trivo_bt_title"
+                        android:text="@string/businesscard_bt_title"
                         android:id="@+id/textView20" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/trivo_bt_desc"
+                        android:text="@string/businesscard_bt_desc"
                         android:id="@+id/textView21" />
                 </LinearLayout>
             </LinearLayout>
@@ -291,14 +291,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/trivo_wc_title"
+                        android:text="@string/businesscard_wc_title"
                         android:id="@+id/textView30" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/trivo_wc_desc"
+                        android:text="@string/businesscard_wc_desc"
                         android:id="@+id/textView31" />
                 </LinearLayout>
             </LinearLayout>
@@ -330,14 +330,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/trivo_3p_title"
+                        android:text="@string/businesscard_3p_title"
                         android:id="@+id/textView14" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/trivo_3p_desc"
+                        android:text="@string/businesscard_3p_desc"
                         android:id="@+id/textView16" />
                 </LinearLayout>
             </LinearLayout>
@@ -369,14 +369,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/trivo_as_title"
+                        android:text="@string/businesscard_as_title"
                         android:id="@+id/textView17" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/trivo_as_desc"
+                        android:text="@string/businesscard_as_desc"
                         android:id="@+id/textView34" />
                 </LinearLayout>
             </LinearLayout>

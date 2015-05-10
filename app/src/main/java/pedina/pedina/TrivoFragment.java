@@ -139,19 +139,19 @@ public class TrivoFragment extends Fragment {
         switch (image.getId())
         {
             case R.id.circle1:
-                text="To find your objects all over the world. Ok for your child, pet, car or bike. Available only for the GPS device.";
+                text=getResources().getString(R.string.popup_gps);
                 title="GPS MODE";
                 break;
             case R.id.circle2:
-                text="To find your objects in a short range distance; your smartphone will also ring if you go far from your objects!";
-                title="BLUETOOTH 3.0";
+                text=getResources().getString(R.string.popup_bluetooth);
+                title="BLUETOOTH";
                 break;
             case R.id.circle3:
-                text="Qi for wireless charging.";
+                text=getResources().getString(R.string.popup_wireless);
                 title="SMART CHARGING";
                 break;
             case R.id.circle4:
-                text="Lithium-polymer battery.\nManifactured with an innovative 3D printer.";
+                text=getResources().getString(R.string.popup_battery);
                 title="INNOVATIVE";
                 break;
         }

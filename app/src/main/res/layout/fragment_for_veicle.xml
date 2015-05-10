@@ -160,19 +160,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/forveicle_wc_title"
+                        android:text="@string/businesscard_wc_title"
                         android:id="@+id/textView19" />
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"></LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/forveicle_wc_desc"
+                        android:text="@string/businesscard_wc_desc"
                         android:id="@+id/textView20" />
                 </LinearLayout>
             </LinearLayout>
