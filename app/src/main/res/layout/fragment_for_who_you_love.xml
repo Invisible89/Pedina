@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/forwhoyoulove_desc"
-                android:id="@+id/textView81"
+                android:id="@+id/textView125"
                 android:textColor="#ff000000"
                 android:textSize="8dp"
                 android:textIsSelectable="true" />

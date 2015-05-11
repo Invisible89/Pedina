@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
             if (web!=null) {
                 web.getSettings().setJavaScriptEnabled(true);
 //                web.loadUrl("https://www.indiegogo.com/campaigns/trivo-the-smallest-and-cheapest-gps-tracker-2/edit#/team");
-                web.loadUrl("https://www.indiegogo.com/projects/flow-hive-honey-on-tap-directly-from-your-beehive");
+                web.loadUrl("https://www.indiegogo.com/projects/trivo-gps-tracker-designed-made-in-italy");
 //                web.loadData("<iframe src=\"https://www.indiegogo.com/project/flow-hive-honey-on-tap-directly-from-your-beehive/embedded\" width=\"222px\" height=\"445px\" frameborder=\"0\" scrolling=\"no\"></iframe>","text/html",null);
             }
         }

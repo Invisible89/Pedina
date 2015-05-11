@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/forveicle_desc"
-                android:id="@+id/textView82"
+                android:id="@+id/textView101"
                 android:textColor="#ff000000"
                 android:textSize="10dp"
                 android:textIsSelectable="true" />

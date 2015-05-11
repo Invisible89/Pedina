@@ -30,7 +30,6 @@
     <string name="ourstory_desc_mc">Ingegnere informatico, a breve si laureerà al Politecnico di Torino. Giocatore di rugby.</string>
     <string name="ourstory_desc_ms">Senior Software Developer, anni di esperienza nella programmazione, a capo dei software</string>
     <string name="ourstory_desc_st">Studentessa all‘Accademia delle Arti di Torino, passione per l’arte e la moda</string>
-    <string name="ourstory_storytitle">DARE VITA AD UNA STARTUP SIGNIFICA CREARE QUALCOSA DAL NULLA</string>
     <string name="ourstory_subdesc_gb">Responsabile social</string>
     <string name="wirelesscharger_po_desc">Il caricatore Wireless è così piccolo che puoi portarlo con te ovunque.</string>
     <string name="wirelesscharger_up_desc">E’ disponibile anche una porta USB affinché tu possa ricaricare la batteria col il tuo computer.</string>
@@ -45,8 +44,6 @@
     <string name="land_gps">Modulo GPS</string>
     <string name="land_qi">Sistema di caricamento Qi Wireless</string>
     <string name="m2msim">SIM M2M</string>
-    <string name="popup_battery">Batteria al litio-polimero ricaricabile.\nProdotto con un\'innovativa stampante 3D.</string>
-    <string name="popup_gps">Per trovare i tuoi oggetti in tutto il mondo. Perfetto per i tuoi bimbi, animali</string>
     <string name="howtocontribute_desc">Trivo è nato da un’idea, in pochi mesi sette ragazzi hanno creato dei prodotti per migliorare la vita delle persone, usando le migliori tecnologie grazie a partners esperti.\n\nCome possiamo trasformare tutto ciò in realtà? La risposta è: crowdfunding! Dopo alcune ricerche abbiamo scelto Indiegogo. Di cosa si tratta?\n\nIl crowdfunding è un modo per raccogliere il capitale d’avvio di un’attività e si adatta perfettamente alla nostra situazione: abbiamo l’idea, potremmo partire domani a produrre ma non abbiamo i soldi per farlo! Indiegogo ci aiuterà, su Indiegogo puoi far conoscere la tua idea al mondo e il mondo ti sosterrà se hai qualcosa di innovativo, utile e necessario.\n\nCome? Puoi prenotare uno dei nostri prodotti e – facendo questo – finanziare il nostro progetto affinché possiamo iniziare con le prime fasi del nostro business e inviarti il prodotto il prima possibile. Tutto ciò che ti serve per contribuire è un conto PayPal.\n\nIl modo più facile per contribuire è scegliere un perk dalla nostra pagina dei prodotti presente su questo sito, potete anche visitare direttamente la nostra pagina su Indiegogo.\n\nPer qualsiasi problema o domanda vi preghiamo di contattarci all’indirizzo e-mail support@trivotracker.com.</string>
     <string name="howtocontribute">Come contribuire</string>
     <string name="timeline_1">Consegna</string>
